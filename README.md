@@ -32,10 +32,10 @@ console.log('Hello World');
 
 ### Redes sociais
 
-[<img width="50" height="50" src="https://github.com/murilio/murilio/blob/master/images/linkedin.svg">](https://www.linkedin.com/in/murilio-nascimento-55775716a)
-[<img width="50" height="50" src="https://github.com/murilio/murilio/blob/master/images/instagram.svg">](https://www.instagram.com/murilio.sw)
-[<img width="50" height="50" src="https://github.com/murilio/murilio/blob/master/images/facebook.svg">](https://www.facebook.com/murilio.silva.1)
-[<img width="50" height="50" src="https://github.com/murilio/murilio/blob/master/images/code.svg">](http://murilio.com.br/)
+[<img width="40" height="40" src="https://github.com/murilio/murilio/blob/master/images/linkedin.svg">](https://www.linkedin.com/in/murilio-nascimento-55775716a)
+[<img width="40" height="40" src="https://github.com/murilio/murilio/blob/master/images/instagram.svg">](https://www.instagram.com/murilio.sw)
+[<img width="40" height="40" src="https://github.com/murilio/murilio/blob/master/images/facebook.svg">](https://www.facebook.com/murilio.silva.1)
+[<img width="40" height="40" src="https://github.com/murilio/murilio/blob/master/images/code.svg">](http://murilio.com.br/)
 
 ### Projetos 
 
