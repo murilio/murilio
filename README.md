@@ -1,4 +1,4 @@
-<img align="right" width="400" src="logo.jpg">
+<img align="right" width="400" src="/images/logo.jpg">
 
 
 ## É **Murilio**, não Murilo 
@@ -32,10 +32,10 @@ console.log('Hello World');
 
 ### Redes sociais
 
-[<img width="50" height="50" src="linkedin.svg">](https://www.linkedin.com/in/murilio-nascimento-55775716a)
-[<img width="50" height="50" src="instagram.svg">](https://www.instagram.com/murilio.sw)
-[<img width="50" height="50" src="facebook.svg">](https://www.facebook.com/murilio.silva.1)
-[<img width="50" height="50" src="code.svg">](http://murilio.com.br/)
+[<img width="50" height="50" src="/images/linkedin.svg">](https://www.linkedin.com/in/murilio-nascimento-55775716a)
+[<img width="50" height="50" src="/images/instagram.svg">](https://www.instagram.com/murilio.sw)
+[<img width="50" height="50" src="/images/facebook.svg">](https://www.facebook.com/murilio.silva.1)
+[<img width="50" height="50" src="/images/code.svg">](http://murilio.com.br/)
 
 ### Projetos 
 
