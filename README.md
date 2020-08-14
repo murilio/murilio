@@ -1,4 +1,4 @@
-<!-- <img align="right" width="400" src="https://github.com/murilio/murilio/blob/master/images/logo.jpg"> -->
+<img align="right" width="400" src="https://github.com/murilio/murilio/blob/master/images/logo.jpg">
 
 
 ## É **Murilio**, não Murilo 
@@ -43,7 +43,7 @@ console.log('Hello World');
 
 [<img width="35" height="35" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg">](https://www.linkedin.com/in/murilio-nascimento-55775716a)
 [<img width="35" height="35" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg">](https://www.instagram.com/murilio.sw)
-[<img width="35" height="35" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg">](http://murilio.com.br/)
+[<img width="35" height="35" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg">](https://murilio.com.br/)
 
 ### Projetos 
 
