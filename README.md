@@ -3,13 +3,13 @@
 
 ## É **Murilio**, não Murilo 
 
-<a href="https://www.linkedin.com/in/murilio-nascimento-55775716a">
+<a target="_blank" href="www.linkedin.com/in/murilio-nascimento-55775716a">
   <img align="left" alt="Murilio | linkedin" width="20px" src="https://github.com/murilio/murilio/blob/master/images/linkedin.svg" />
 </a>
-<a href="https://www.instagram.com/murilio.sw">
+<a target="_blank" href="https://www.instagram.com/murilio.sw">
   <img align="left" alt="Murilio | Instagram" width="21px" src="https://github.com/murilio/murilio/blob/master/images/instagram.svg" />
 </a>
-<a href="https://murilio.com.br/">
+<a target="_blank" href="https://murilio.com.br/">
   <img align="left" alt="Murilio | Site" width="21px" src="https://github.com/murilio/murilio/blob/master/images/code.svg" />
 </a>
 
