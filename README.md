@@ -55,6 +55,9 @@ console.log('Hello World');
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=murilio&layout=compact&theme=dracula)](https://github.com/anuraghazra/github-readme-stats)
 
 
-### Projetos 
+### Projects 
 
-- Clone do **Pipefy** usando React e drag e drop, [acesse aqui](https://muriliopipefy.netlify.app/)
+#### Site em Espanhol da [Bio2coat](https://bio2coat-group.com/): [Acesse aqui](https://bio2coat-group.com/)
+#### Carta de serviços, projeto presente em diversas prefeituras: [Acesse aqui](https://servicos.brejodocruz.pb.gov.br/)
+#### Layout de portais com WordPress: [Acesse aqui](https://www.sertaozinho.pb.gov.br/)
+#### Clone do **Pipefy** usando React e drag e drop: [Acesse aqui](https://muriliopipefy.netlify.app/)
