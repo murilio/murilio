@@ -3,17 +3,10 @@
 
 ## É **Murilio**, não Murilo 
 
-<a target="_blank" href="www.linkedin.com/in/murilio-nascimento-55775716a">
-  <img align="left" alt="Murilio | linkedin" width="20px" src="https://github.com/murilio/murilio/blob/master/images/linkedin.svg" />
-</a>
-<a target="_blank" href="https://www.instagram.com/murilio.sw">
-  <img align="left" alt="Murilio | Instagram" width="21px" src="https://github.com/murilio/murilio/blob/master/images/instagram.svg" />
-</a>
-<a target="_blank" href="https://murilio.com.br/">
-  <img align="left" alt="Murilio | Site" width="21px" src="https://github.com/murilio/murilio/blob/master/images/code.svg" />
-</a>
 
-<br />
+[![Linkedin Badge](https://img.shields.io/badge/-Murilio-0a66c2?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/murilio)](https://www.linkedin.com/in/murilio/)
+[![Instagram Badge](https://img.shields.io/badge/-Murilio-a73f71?style=flat-square&logo=Instagram&logoColor=white&link=https://www.instagram.com/murilio.sw/)](https://www.instagram.com/murilio.sw/)
+
 <br />
 
 Full-Stack Developer :man_technologist:
@@ -31,23 +24,17 @@ console.log('Hello World');
 
 ### Linguagens e ferramentas:
 
-<code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"></code>
-<code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"></code>
 <code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"></code>
-<code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/wordpress/wordpress.png"></code>
-<code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/php/php.png"></code>
-<code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/laravel/laravel.png"></code>
-<code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sass/sass.png"></code>
 <code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"></code>
-<code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png"></code>
-<code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sql/sql.png"></code>
-<code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png"></code>
+<code><img height="30" src="https://user-images.githubusercontent.com/1680157/87443758-4a5f9600-c5cc-11ea-8f63-92e126a1145b.png"></code>
 <code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/postgresql/postgresql.png"></code>
+<code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/wordpress/wordpress.png"></code>
+<code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/laravel/laravel.png"></code>
 
 <br />
 
 <code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png"></code>
-<code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png"></code>
+<code><img height="30" src="https://user-images.githubusercontent.com/1680157/87443755-49c6ff80-c5cc-11ea-954a-579f7c72873a.png"></code>
 <code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/ubuntu/ubuntu.png"></code>
 <code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/terminal/terminal.png"></code>
 
@@ -57,7 +44,5 @@ console.log('Hello World');
 
 ### Projects 
 
-#### Site em Espanhol da [Bio2coat](https://bio2coat-group.com/): [Acesse aqui](https://bio2coat-group.com/)
-#### Carta de serviços, projeto presente em diversas prefeituras: [Acesse aqui](https://servicos.brejodocruz.pb.gov.br/)
-#### Layout de portais com WordPress: [Acesse aqui](https://www.sertaozinho.pb.gov.br/)
-#### Clone do **Pipefy** usando React e drag e drop: [Acesse aqui](https://muriliopipefy.netlify.app/)
+- Projeto em React consumindo api sobre o covid-19:[Acesse aqui](https://covid-19-m.herokuapp.com/)
+- Clone do **Pipefy** usando React e drag e drop: [Acesse aqui](https://muriliopipefy.netlify.app/)
