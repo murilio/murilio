@@ -50,7 +50,7 @@ export const Container = styled.header`
       background: transparent;
       width: 100%;
       padding: 0 5%;
-      transition: all 0.4s;
+      transition: all 0.2s;
       z-index: 9;
 
       .openMenu {
@@ -75,6 +75,7 @@ export const Container = styled.header`
           font-weight: 400;
           margin-left: 18px;
           font-size: 22px;
+          color: var(--color-dark-gray);
 
           span {
             font-weight: 800;
@@ -142,6 +143,10 @@ export const Container = styled.header`
 
           ul {
             flex-direction: row;
+
+            li > a {
+              font-size: 14px;
+            }
           }
 
           > div {
@@ -199,6 +204,7 @@ export const Container = styled.header`
           font-weight: normal;
           line-height: clamp(35px, 10vw, 72px);
           font-size: clamp(35px, 10vw, 64px);
+          color: var(--color-dark-gray);
         }
 
         span {
@@ -206,7 +212,7 @@ export const Container = styled.header`
           font-weight: normal;
           font-size: 14px;
           line-height: 21px;
-          color: var(--color-gray);
+          color: var(--color-soft-roxo);
 
           &::after {
             content: '';
@@ -249,17 +255,12 @@ export const Container = styled.header`
 
     @keyframes positionAnimation {
       0%, 100% {
-        bottom: 90px;
+        bottom: 20px;
       }
       50% {
-        bottom: 100px;
+        bottom: 30px;
       }
     }
-  }
-
-  #content {
-    position: absolute;
-    bottom: 0;
   }
 `
 

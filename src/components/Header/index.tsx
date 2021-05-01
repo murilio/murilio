@@ -23,10 +23,10 @@ export default function Header () {
       </div>
       <div className='container'>
         <div className={bgMenu ? 'menu menuBg' : 'menu'}>
-          <div className='logo'>
+          <a href="#" className='logo'>
             <img src="/favicon.png" alt='Favicon' />
             <h1>muri<span>dev</span></h1>
-          </div>
+          </a>
 
           <nav className={openMenu ? 'itens itensOpen' : 'itens'}>
             <ul>
@@ -87,7 +87,6 @@ export default function Header () {
       <a className='arrow' href='#about'>
         <Arrow />
       </a>
-      <div id='content'></div>
     </Container>
   )
 }

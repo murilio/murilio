@@ -1,5 +1,5 @@
 // style
-import { Container } from '../styles/styles'
+import { Container } from '../styles'
 
 // components
 import Header from '../components/Header'

@@ -33,14 +33,14 @@ const GlobalStyle = createGlobalStyle`
   ::-webkit-scrollbar-thumb:hover {
     background: var(--color-roxo);
   }
-  
+
   * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     outline: 0;
   }
-  
+
   html, body, #__next {
     height: 100%;
     min-height: 100vh;

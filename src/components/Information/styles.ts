@@ -59,7 +59,7 @@ export const Container = styled.section`
       font-weight: normal;
       font-size: 14px;
       line-height: 21px;
-      color: var(--color-gray);
+      color: var(--color-soft-roxo);
       max-width: 470px;
 
       + p {
