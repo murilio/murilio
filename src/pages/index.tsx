@@ -1,5 +1,5 @@
 // style
-import { Container } from './styles'
+import { Container } from './_styles'
 
 // components
 import Header from '../components/Header'
@@ -8,7 +8,7 @@ import Footer from '../components/Footer'
 import Projects from '../components/Projects'
 import Articles from '../components/Articles'
 
-export default function Home() {
+export default function Home () {
   return (
     <Container>
       <Header/>
