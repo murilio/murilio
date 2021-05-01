@@ -38,7 +38,6 @@ export const Container = styled.header`
     position: absolute;
     width: 100%;
     top: 0;
-    z-index: 999999;
 
     .menu {
       max-height: 70px;
@@ -52,6 +51,7 @@ export const Container = styled.header`
       width: 100%;
       padding: 0 5%;
       transition: all 0.4s;
+      z-index: 9;
 
       .openMenu {
         display: initial;
@@ -68,6 +68,7 @@ export const Container = styled.header`
 
         img {
           height: 39px;
+          transition: all 0.2s;
         }
 
         h1 {
@@ -168,6 +169,11 @@ export const Container = styled.header`
     .menuBg {
       box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
       background-color: var(--color-branco);
+      max-height: 50px;
+
+      > .logo > img {
+        height: 28px;
+      }
     }
 
     .content {
@@ -242,14 +248,11 @@ export const Container = styled.header`
     animation: positionAnimation 1s infinite;
 
     @keyframes positionAnimation {
-      0% {
+      0%, 100% {
         bottom: 90px;
       }
       50% {
-        bottom: 110px;
-      }
-      100% {
-        bottom: 90px;
+        bottom: 100px;
       }
     }
   }

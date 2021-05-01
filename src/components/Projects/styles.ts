@@ -27,30 +27,6 @@ export const Container = styled.section`
       justify-content: space-between;
     }
   }
-
-  > .viewAll {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    margin: 30px 0 0 0;
-
-    > a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 12px;
-      line-height: 21px;
-      padding: 0 10px;
-      height: 35px;
-      border-radius: 10px;
-      color: var(--color-contraste);
-      transition: all 0.2s;
-
-      &:hover {
-        background-color: transparent;
-      }
-    }
-  }
 `
 
 export const Title = styled.h1`

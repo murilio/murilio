@@ -36,7 +36,7 @@ export default function Header () {
                 </Link>
               </li>
               <li>
-                <Link href='#sobre'>
+                <Link href='#about'>
                   <a>Sobre</a>
                 </Link>
               </li>
@@ -75,14 +75,16 @@ export default function Header () {
             <h1>Sou, Murilio</h1>
             <h1>Um Desenvolvedor</h1>
             <h1>Fullstack</h1>
-            <span>Hi, sou Murilio não Murilo, sou apaixonado por desenvolvimento tanto frontend como backend. Estou bastante focado na stack de JavaScript, pois acredito em todo o seu potencial e claramente sou um entusiasta da tecnologia.</span>
+            <span>Hi, sou Murilio não Murilo, sou apaixonado por desenvolvimento
+              tanto frontend como backend. Estou bastante focado na stack de
+              JavaScript, pois acredito em todo o seu potencial e claramente sou um entusiasta da tecnologia.</span>
           </div>
           <div className='contentRight'>
-            <img src="/user.svg" alt='user' />
+            <img src="/user.png" alt='user' />
           </div>
         </div>
       </div>
-      <a className='arrow' href='#content'>
+      <a className='arrow' href='#about'>
         <Arrow />
       </a>
       <div id='content'></div>

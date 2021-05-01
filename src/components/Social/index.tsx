@@ -1,8 +1,6 @@
-import React from 'react'
-
 import { Container, IconLinkedin, IconGithub, IconInstagram } from './styles'
 
-export default function Social() {
+export default function Social () {
   return (
     <Container>
       <a

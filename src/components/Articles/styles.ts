@@ -20,26 +20,6 @@ export const Container = styled.section`
       justify-content: space-between;
     }
   }
-
-  > .viewAll {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    margin: 30px 0 0 0;
-
-    > a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 12px;
-      line-height: 21px;
-      padding: 0 10px;
-      height: 35px;
-      border-radius: 10px;
-      color: var(--color-dark-roxo);
-      transition: all 0.2s;
-    }
-  }
 `
 
 export const Title = styled.div`

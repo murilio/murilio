@@ -1,5 +1,3 @@
-import React from 'react'
-
 // styles
 import { Container, Title } from './styles'
 
@@ -41,23 +39,17 @@ const itens = [
   }
 ]
 
-export default function Articles() {
+export default function Articles () {
   return (
-    <Container>
+    <Container id="blog">
       <Title>
         <h2>Conteúdo e artigos</h2>
-        <span>
-          Aqui tento escrever sobre meus processos, tecnologias e o que der na
-          telha
-        </span>
+        <span>Aqui tento escrever sobre meus processos, tecnologias e o que der na telha</span>
       </Title>
       <div className='container'>
         {itens.slice(0, 3).map(item => (
-          <Card key={item.id} id={item.id} img={item.img} title={item.title} />
+          <Card key={item.id} img={item.img} title={item.title} />
         ))}
-      </div>
-      <div className='viewAll'>
-        <a href='#'>Ver todos</a>
       </div>
     </Container>
   )

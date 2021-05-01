@@ -1,16 +1,23 @@
-import React from 'react'
-
 // style
 import { ContainerCardProjects } from './styles'
 
-export default function CardProjects({
+interface Props {
+  id?: number
+  url?: string
+  img?: string
+  title?: string
+  description?: string
+  lastPost?: boolean
+}
+
+export default function CardProjects ({
   id,
   url,
   img,
   title,
   description,
   lastPost
-}) {
+}: Props) {
   return (
     <ContainerCardProjects>
       <img src={img} alt={title} />

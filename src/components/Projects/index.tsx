@@ -1,5 +1,3 @@
-import React from 'react'
-
 // styles
 import { Container, Title } from './styles'
 
@@ -54,29 +52,29 @@ const itens = [
   }
 ]
 
-export default function Projects() {
+export default function Projects () {
   return (
-    <Container>
-      <Title>
-        Alguns dos meus <span>principais projetos</span>
-      </Title>
-      <span></span>
-      <div className='container'>
-        {itens.slice(0, 4).map((item, index) => (
-          <Card
-            key={item.id}
-            id={item.id}
-            url={item.url}
-            img={item.img}
-            title={item.title}
-            description={item.description}
-            lastPost={index === 0}
-          />
-        ))}
-      </div>
-      <div className='viewAll'>
-        <a href='#'>Ver todos</a>
-      </div>
-    </Container>
+    <>
+      <div id="cases"></div>
+      <Container>
+        <Title>
+          Alguns dos meus <span>principais projetos</span>
+        </Title>
+        <span></span>
+        <div className='container'>
+          {itens.slice(0, 4).map((item, index) => (
+            <Card
+              key={item.id}
+              id={item.id}
+              url={item.url}
+              img={item.img}
+              title={item.title}
+              description={item.description}
+              lastPost={index === 0}
+            />
+          ))}
+        </div>
+      </Container>
+    </>
   )
 }

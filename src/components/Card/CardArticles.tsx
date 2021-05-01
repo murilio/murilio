@@ -1,9 +1,12 @@
-import React from 'react'
-
 // style
 import { ContainerCardArticles } from './styles'
 
-export default function CardArticles({ img, title }) {
+interface Props {
+  img?: string;
+  title: string;
+}
+
+export default function CardArticles ({ img, title }: Props) {
   return (
     <ContainerCardArticles>
       <img src={img} alt={title} />

@@ -5,7 +5,7 @@ import { Container } from './styles'
 
 export default function Footer () {
   return (
-    <Container>
+    <Container id="contact">
       <div className='footer'>
         <div className='footerLeft'>
           <h1>
@@ -29,12 +29,12 @@ export default function Footer () {
           <div className='subMenu'>
             <ul>
               <li>
-                <Link href='/'>
+                <Link href='#'>
                   <a>Início</a>
                 </Link>
               </li>
               <li>
-                <Link href='#sobre'>
+                <Link href='#about'>
                   <a>Sobre</a>
                 </Link>
               </li>
@@ -49,20 +49,20 @@ export default function Footer () {
                 </Link>
               </li>
               <li>
-                <Link href='#contato'>
+                <Link href='#contact'>
                   <a>Contato</a>
                 </Link>
               </li>
             </ul>
             <ul>
               <li>
-                <a href='#'>Linkedin</a>
+                <a href='https://linkedin.com/in/murilio'>Linkedin</a>
               </li>
               <li>
-                <a href='#'>Github</a>
+                <a href='https://github.com/murilio'>Github</a>
               </li>
               <li>
-                <a href='#'>Instagram</a>
+                <a href='https://www.instagram.com/murilio.sw/'>Instagram</a>
               </li>
             </ul>
           </div>

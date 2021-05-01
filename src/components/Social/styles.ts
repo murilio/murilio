@@ -1,11 +1,15 @@
 import styled from 'styled-components'
 
 // icons
-import {  AiOutlineGithub } from 'react-icons/ai'
+import { AiOutlineGithub } from 'react-icons/ai'
 import { SiLinkedin, SiInstagram } from 'react-icons/si'
 
 export const Container = styled.div`
   display: flex;
+
+  > a {
+    display: flex;
+  }
 `
 
 export const IconLinkedin = styled(SiLinkedin)`
