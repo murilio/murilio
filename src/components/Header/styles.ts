@@ -284,10 +284,10 @@ export const Container = styled.header`
 
     @keyframes positionAnimation {
       0%, 100% {
-        bottom: 20px;
+        bottom: 80px;
       }
       50% {
-        bottom: 30px;
+        bottom: 70px;
       }
     }
   }
@@ -316,13 +316,10 @@ export const Arrow = styled(AiOutlineArrowDown)`
   animation: boxShadowAnimation 1s infinite;
 
   @keyframes boxShadowAnimation {
-    0% {
-      box-shadow: 0px 0px 20px 0px var(--color-soft-roxo);
-    }
-    50% {
+    0%, 100% {
       box-shadow: 0px 0px 20px 0px var(--color-gray);
     }
-    100% {
+    50% {
       box-shadow: 0px 0px 20px 0px var(--color-soft-roxo);
     }
   }
