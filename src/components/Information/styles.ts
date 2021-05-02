@@ -66,6 +66,20 @@ export const Container = styled.section`
         margin-top: 24px;
       }
     }
+
+    > a {
+      display: inline-block;
+      margin: 50px 0 0 0;
+      background-color: var(--color-contraste);
+      border-radius: 20px;
+      color: var(--color-branco);
+      padding: 19px 65px;
+      transition: all 0.3s;
+
+      &:hover {
+        background-color: var(--color-dark-roxo);
+      }
+    }
   }
 
   .technologies {
@@ -135,7 +149,7 @@ export const IconReact = styled(FaReact)`
   width: 90px;
   height: 80.08px;
 `
-export const IconJavaScript = styled(SiJavascript)`
+export const IconJS = styled(SiJavascript)`
   color: var(--color-gray);
   width: 69px;
   height: 69px;

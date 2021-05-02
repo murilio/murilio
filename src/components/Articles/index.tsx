@@ -4,40 +4,11 @@ import { Container, Title } from './styles'
 // components
 import Card from '../Card/CardArticles'
 
-const itens = [
-  {
-    id: 1,
-    img:
-      'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
-    title:
-      'title title title title title title title title title title title title title title title title title title title title title title title title title title title title title title title title title title title title title title title title title title title title title title title title title title title title title title title title title title title  '
-  },
-  {
-    id: 2,
-    img:
-      'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
-    title: 'title'
-  },
-  {
-    id: 3,
-    img:
-      'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
-    url: 'url',
-    title: 'title'
-  },
-  {
-    id: 4,
-    img:
-      'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
-    title: 'title'
-  },
-  {
-    id: 5,
-    img:
-      'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
-    title: 'title'
-  }
-]
+const itens = [{
+  id: 1,
+  img: '/articles/input.png',
+  title: 'Máscaras com regex no React JS'
+}]
 
 export default function Articles () {
   return (

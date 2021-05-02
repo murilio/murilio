@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+// import { useRouter } from 'next/router'
 
 // style
 import { Container, IconMenu, IconMenuClose, Arrow } from './styles'
@@ -10,6 +11,8 @@ import Social from '../Social'
 export default function Header () {
   const [openMenu, setOpenMenu] = useState(false)
   const [bgMenu, setBgMenu] = useState(false)
+
+  // const activeLinkMenu = (path: string) => asPath === `/#${path}` ? setActiveLink(path) : null
 
   useEffect(() => {
     window.onscroll = () => document.documentElement.scrollTop > 50 ? setBgMenu(true) : setBgMenu(false)
@@ -22,45 +25,50 @@ export default function Header () {
         <div className='colorGelo'></div>
       </div>
       <div className='container'>
-        <div className={bgMenu ? 'menu menuBg' : 'menu'}>
-          <a href="#" className='logo'>
-            <img src="/favicon.png" alt='Favicon' />
-            <h1>muri<span>dev</span></h1>
-          </a>
+        <div className={bgMenu ? 'menu scrollMenu' : 'menu'}>
+          <Link href='#'>
+            <a className='logo'>
+              <img src="/favicon.png" alt='Favicon' />
+              <h1>muri<span>dev</span></h1>
+            </a>
+          </Link>
 
           <nav className={openMenu ? 'itens itensOpen' : 'itens'}>
-            <ul>
-              <li>
-                <Link href='#'>
-                  <a>Ínicio</a>
-                </Link>
-              </li>
-              <li>
-                <Link href='#about'>
-                  <a>Sobre</a>
-                </Link>
-              </li>
-              <li>
-                <Link href='#cases'>
-                  <a>Meus Cases</a>
-                </Link>
-              </li>
-              <li>
-                <Link href='#blog'>
-                  <a>Blog</a>
-                </Link>
-              </li>
-              <li>
-                <Link href='#contact'>
-                  <a>Contato</a>
-                </Link>
-              </li>
-            </ul>
-            <IconMenuClose
-              className='closeMenu'
-              onClick={() => setOpenMenu(!openMenu)}
-            />
-            <Social />
+            <div className="contentMenu">
+              <ul>
+                <li>
+                  <Link href='#'>
+                    <a>Ínicio</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href='#about'>
+                    <a>Sobre</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href='#cases'>
+                    <a>Meus Cases</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href='#blog'>
+                    <a>Blog</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href='#contact'>
+                    <a>Contato</a>
+                  </Link>
+                </li>
+              </ul>
+              <IconMenuClose
+                className='closeMenu'
+                onClick={() => setOpenMenu(!openMenu)}
+              />
+              <Social />
+            </div>
+            <div className="divWithCloseMenu" onClick={() => setOpenMenu(!openMenu)}></div>
           </nav>
           <Social />
           <IconMenu
@@ -75,9 +83,11 @@ export default function Header () {
             <h1>Sou, Murilio</h1>
             <h1>Um Desenvolvedor</h1>
             <h1>Fullstack</h1>
-            <span>Hi, sou Murilio não Murilo, sou apaixonado por desenvolvimento
-              tanto frontend como backend. Estou bastante focado na stack de
-              JavaScript, pois acredito em todo o seu potencial e claramente sou um entusiasta da tecnologia.</span>
+            <span>
+              Hi, sou Murilio não Murilo, sou apaixonado por desenvolvimento tanto
+              frontend como backend. Estou bastante focado na stack de JavaScript,
+              pois acredito em todo o seu potencial e claramente sou um entusiasta da tecnologia.
+            </span>
           </div>
           <div className='contentRight'>
             <img src="/user.png" alt='user' />

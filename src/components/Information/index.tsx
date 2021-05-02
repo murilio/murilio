@@ -1,5 +1,5 @@
 // styles
-import { Container, IconNode, IconReact, IconJavaScript } from './styles'
+import { Container, IconNode, IconReact, IconJS } from './styles'
 
 // components
 import CardUser from '../CardUser'
@@ -27,7 +27,7 @@ export default function Information () {
             href='https://github.com/murilio'
             target='_blank'
             rel='noreferrer'>
-            <a>Confira meu CV</a>
+            <span>Confira meu CV</span>
           </a>
         </div>
         <div className='technologies'>
@@ -38,7 +38,7 @@ export default function Information () {
               <img src="/heart.svg" alt='Coração pixelizado' className='heart' />
               <IconNode />
               <IconReact />
-              <IconJavaScript />
+              <IconJS />
             </div>
           </div>
         </div>

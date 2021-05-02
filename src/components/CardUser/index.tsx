@@ -5,7 +5,7 @@ export default function CardUser () {
     <Container>
       <div className='cards'></div>
       <div className='cards'>
-        <img src='https://avatars2.githubusercontent.com/u/36972345?v=4' alt=''/>
+        <img src='https://avatars2.githubusercontent.com/u/36972345?v=4' alt='Imagem do usuário'/>
       </div>
       <div className='cards'></div>
       <div className='cards'></div>

@@ -13,6 +13,7 @@ export default function Footer () {
           </h1>
           <span className='linha'></span>
           <p>contato@murilio.com.br</p>
+          <p>(83) 9 9665-9384</p>
 
           <div className='location'>
             <p>João Pessoa - Paraíba </p>
@@ -56,13 +57,22 @@ export default function Footer () {
             </ul>
             <ul>
               <li>
-                <a href='https://linkedin.com/in/murilio'>Linkedin</a>
+                <a
+                  href='https://linkedin.com/in/murilio'
+                  target='_blank'
+                  rel='noreferrer'>Linkedin</a>
               </li>
               <li>
-                <a href='https://github.com/murilio'>Github</a>
+                <a
+                  href='https://github.com/murilio'
+                  target='_blank'
+                  rel='noreferrer'>Github</a>
               </li>
               <li>
-                <a href='https://www.instagram.com/murilio.sw/'>Instagram</a>
+                <a
+                  href='https://instagram.com/murilio.sw/'
+                  target='_blank'
+                  rel='noreferrer'>Instagram</a>
               </li>
             </ul>
           </div>

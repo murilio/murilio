@@ -85,47 +85,62 @@ export const Container = styled.header`
 
       .itens {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
+
         position: fixed;
         top: 0;
         left: -100vw;
         width: 100vw;
         height: 100vh;
-        background: linear-gradient(
-          45deg,
-          var(--color-contraste),
-          var(--color-roxo)
-        );
         transition: all 0.3s;
 
-        > ul {
-          position: relative;
+        background-color: rgba(255, 255, 255, 0.3);
+
+        > .contentMenu {
           display: flex;
           flex-direction: column;
+          align-items: center;
+          justify-content: space-around;
 
-          li {
-            font-size: 14px;
-            color: var(--color-gray);
+          height: 100%;
+          width: 75%;
+          background: linear-gradient(
+            45deg,
+            var(--color-contraste),
+            var(--color-roxo)
+          );
 
-            a {
-              padding: 0 15px;
+          position: relative;
+
+          ul {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+
+            li {
+              font-size: 14px;
               color: var(--color-gray);
 
-              &:hover {
+              a {
+                padding: 0 15px;
+                color: var(--color-gray);
+
+                &:hover {
+                  color: var(--color-contraste);
+                }
+              }
+
+              .active {
                 color: var(--color-contraste);
               }
-            }
-
-            .active {
-              color: var(--color-contraste);
             }
           }
         }
 
-        > div {
-          position: absolute;
-          bottom: 50px;
+        .divWithCloseMenu {
+          width: 25%;
+          height: 100%;
         }
 
         .closeMenu {
@@ -141,19 +156,29 @@ export const Container = styled.header`
           width: auto;
           background: transparent;
 
-          ul {
-            flex-direction: row;
+          .contentMenu {
+            height: auto;
+            width: auto;
+            background: transparent;
 
-            li > a {
-              font-size: 14px;
+            ul {
+              flex-direction: row;
+
+              li > a {
+                font-size: 14px;
+              }
+            }
+
+            > div {
+              display: none;
+            }
+
+            .closeMenu {
+              display: none;
             }
           }
 
-          > div {
-            display: none;
-          }
-
-          .closeMenu {
+          .divWithCloseMenu {
             display: none;
           }
         }
@@ -163,15 +188,19 @@ export const Container = styled.header`
         left: 0vw;
         transition: all 0.3s;
 
-        > ul {
+        > .contentMenu ul {
           > li {
             font-size: 22px;
+
+            @media only screen and (min-width: 768px) {
+              font-size: 14px;
+            }
           }
         }
       }
     }
 
-    .menuBg {
+    .scrollMenu {
       box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
       background-color: var(--color-branco);
       max-height: 50px;
