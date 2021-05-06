@@ -12,10 +12,8 @@ export default function Header () {
   const [openMenu, setOpenMenu] = useState(false)
   const [bgMenu, setBgMenu] = useState(false)
 
-  // const activeLinkMenu = (path: string) => asPath === `/#${path}` ? setActiveLink(path) : null
-
   useEffect(() => {
-    window.onscroll = () => document.documentElement.scrollTop > 50 ? setBgMenu(true) : setBgMenu(false)
+    window.onscroll = () => document.documentElement.scrollTop > 150 ? setBgMenu(true) : setBgMenu(false)
   }, [])
 
   return (

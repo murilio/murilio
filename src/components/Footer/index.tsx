@@ -79,7 +79,7 @@ export default function Footer () {
         </div>
       </div>
       <div className='subFooter'>
-        <h2> Feito com </h2>
+        <h2>Layout desenhado com </h2>
         <img src="/heart.svg" alt='coração pixelizado' />
         <h2>por</h2>
         <a

@@ -1,6 +1,6 @@
-<img align="right" width="350" src="https://github.com/murilio/murilio/blob/master/images/murilio.png">
+<img align="right" width="350" src="https://github.com/murilio/murilio/blob/master/images/public/murilio.png">
 
-## É **Murilio**, não Murilo 
+## É **Murilio**, não Murilo
 
 [![Linkedin Badge](https://img.shields.io/badge/-Murilio-0a66c2?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/murilio)](https://www.linkedin.com/in/murilio/)
 [![Instagram Badge](https://img.shields.io/badge/-Murilio-833AB4?style=flat-square&logo=Instagram&logoColor=white&link=https://www.instagram.com/murilio.sw/)](https://www.instagram.com/murilio.sw/)
@@ -36,11 +36,11 @@ console.log('Hello World');
 <code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/terminal/terminal.png"></code>
 
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=murilio&layout=compact&theme=dracula)](https://www.linkedin.com/in/murilio)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=murilio&layout=compact&theme=dracula)](https://www.murilio.com.br/)
 
-[![Murilio wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=murilio&theme=dracula)](https://www.linkedin.com/in/murilio)
+[![Murilio wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=murilio&theme=dracula)](https://www.murilio.com.br/)
 
-### Projects 
+### Projects
 
 - Projeto em React consumindo api sobre o covid-19:[Acesse aqui](https://covid-19-m.herokuapp.com/)
 - Clone do **Pipefy** usando React e drag e drop: [Acesse aqui](https://muriliopipefy.netlify.app/)
