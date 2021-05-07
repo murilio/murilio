@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import styled from 'styled-components'
 
 import { GetStaticPaths, GetStaticProps } from 'next'
 
@@ -16,8 +17,6 @@ import Header from '../../components/Header'
 //   thumbnail: string
 //   contentHtml: string
 // }
-
-import { Container } from './styles'
 
 export default function Post ({ post }: any) {
   return (
@@ -66,3 +65,20 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
     revalidate: 60 * 60 * 24 // 24 hrs
   }
 }
+
+export const Container = styled.section`
+  padding: 2% 5%;
+
+  @media only screen and (min-width: 2440px) {
+    padding: 2% 15%;
+  }
+
+  .information {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+
+    padding: 10px 0 20px;
+  }
+`
