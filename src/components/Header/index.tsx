@@ -8,7 +8,14 @@ import { Container, IconMenu, IconMenuClose, Arrow } from './styles'
 // components
 import Social from '../Social'
 
-export default function Header () {
+type HeaderProps = {
+  title: string
+  subtile: string
+  description: string
+  img: string
+}
+
+export default function Header ({ subtile, title, description, img }: HeaderProps) {
   const [openMenu, setOpenMenu] = useState(false)
   const [bgMenu, setBgMenu] = useState(false)
 
@@ -17,84 +24,81 @@ export default function Header () {
   }, [])
 
   return (
-    <Container>
-      <div className='backgroundColor'>
-        <div className='colorWhite'></div>
-        <div className='colorGelo'></div>
-      </div>
-      <div className='container'>
-        <div className={bgMenu ? 'menu scrollMenu' : 'menu'}>
-          <Link href='#'>
-            <a className='logo'>
-              <img src="/favicon.png" alt='Favicon' />
-              <h1>muri<span>dev</span></h1>
-            </a>
-          </Link>
+    <>
+      <Container>
+        <div className='backgroundColor'>
+          <div className='colorWhite'></div>
+          <div className='colorGelo'></div>
+        </div>
+        <div className='container'>
+          <div className={bgMenu ? 'menu scrollMenu' : 'menu'}>
+            <Link href='/'>
+              <a className='logo'>
+                <img src="/favicon.png" alt='Favicon' />
+                <h1>muri<span>dev</span></h1>
+              </a>
+            </Link>
 
-          <nav className={openMenu ? 'itens itensOpen' : 'itens'}>
-            <div className="contentMenu">
-              <ul>
-                <li>
-                  <Link href='#'>
-                    <a>Ínicio</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href='#about'>
-                    <a>Sobre</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href='#cases'>
-                    <a>Meus Cases</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href='#blog'>
-                    <a>Blog</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href='#contact'>
-                    <a>Contato</a>
-                  </Link>
-                </li>
-              </ul>
-              <IconMenuClose
-                className='closeMenu'
-                onClick={() => setOpenMenu(!openMenu)}
-              />
-              <Social />
+            <nav className={openMenu ? 'itens itensOpen' : 'itens'}>
+              <div className="contentMenu">
+                <ul>
+                  <li>
+                    <Link href='/'>
+                      <a>Ínicio</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href='#about'>
+                      <a>Sobre</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href='#cases'>
+                      <a>Meus Cases</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href='#blog'>
+                      <a>Blog</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href='#contact'>
+                      <a>Contato</a>
+                    </Link>
+                  </li>
+                </ul>
+                <IconMenuClose
+                  className='closeMenu'
+                  onClick={() => setOpenMenu(!openMenu)}
+                />
+                <Social />
+              </div>
+              <div className="divWithCloseMenu" onClick={() => setOpenMenu(!openMenu)}></div>
+            </nav>
+            <Social />
+            <IconMenu
+              className='openMenu'
+              onClick={() => setOpenMenu(!openMenu)}
+            />
+          </div>
+
+          <div className='content'>
+            <div className='contentLeft'>
+              <h2>{subtile}</h2>
+              <h1>{title}</h1>
+              <span>{description}</span>
             </div>
-            <div className="divWithCloseMenu" onClick={() => setOpenMenu(!openMenu)}></div>
-          </nav>
-          <Social />
-          <IconMenu
-            className='openMenu'
-            onClick={() => setOpenMenu(!openMenu)}
-          />
-        </div>
-
-        <div className='content'>
-          <div className='contentLeft'>
-            <h2>Olá, bem-vindo</h2>
-            <h1>Sou, Murilio</h1>
-            <h1>Um Desenvolvedor</h1>
-            <h1>Fullstack</h1>
-            <span>
-              Hi, sou Murilio não Murilo, sou apaixonado por desenvolvimento tanto
-              frontend como backend. Estou bastante focado na stack de JavaScript,
-              pois acredito em todo o seu potencial e claramente sou um entusiasta da tecnologia.
-            </span>
-          </div>
-          <div className='contentRight'>
-            <img src="/user.png" alt='user' />
+            <div className='contentRight'>
+              <img src={img} alt={title} />
+            </div>
           </div>
         </div>
-      </div>
-      <a className='arrow' href='#about'>
-        <Arrow />
-      </a>
-    </Container>
+        <a className='arrow' href='#content'>
+          <Arrow />
+        </a>
+      </Container>
+      <div id="content"></div>
+    </>
   )
 }

@@ -18,7 +18,6 @@ console.log('Hello World');
 - :earth_americas: João Pessoa - Paraíba
 - :telescope: No momento estou estudando Typescript e Docker
 
-
 ### Linguagens e ferramentas:
 
 <code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"></code>
@@ -34,7 +33,6 @@ console.log('Hello World');
 <code><img height="30" src="https://user-images.githubusercontent.com/1680157/87443755-49c6ff80-c5cc-11ea-954a-579f7c72873a.png"></code>
 <code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/ubuntu/ubuntu.png"></code>
 <code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/terminal/terminal.png"></code>
-
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=murilio&layout=compact&theme=dracula)](https://www.murilio.com.br/)
 

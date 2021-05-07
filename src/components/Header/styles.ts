@@ -53,6 +53,10 @@ export const Container = styled.header`
       transition: all 0.2s;
       z-index: 9;
 
+      @media only screen and (min-width: 2440px) {
+        padding: 0 15%;
+      }
+
       .openMenu {
         display: initial;
 
@@ -117,6 +121,7 @@ export const Container = styled.header`
             position: relative;
             display: flex;
             flex-direction: column;
+            list-style: none;
 
             li {
               font-size: 14px;
@@ -217,6 +222,10 @@ export const Container = styled.header`
       padding: 0 5%;
       min-height: 100vh;
 
+      @media only screen and (min-width: 2440px) {
+        padding: 0 15%;
+      }
+
       .contentLeft {
         width: 100%;
 
@@ -264,10 +273,14 @@ export const Container = styled.header`
 
         img {
           width: 100%;
+          border-radius: 20px;
         }
 
         @media only screen and (min-width: 768px) {
           display: initial;
+
+          max-width: 600px;
+          width: 100%;
         }
       }
     }

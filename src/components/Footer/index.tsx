@@ -30,7 +30,7 @@ export default function Footer () {
           <div className='subMenu'>
             <ul>
               <li>
-                <Link href='#'>
+                <Link href='/'>
                   <a>Início</a>
                 </Link>
               </li>

@@ -61,12 +61,41 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Poppins', sans-serif;
   }
 
-  ul {
-    list-style: none;
-  }
-
   a {
     text-decoration: none;
+    color: var(    --color-roxo);
+  }
+
+  /*
+    styles markdown
+  */
+
+  code {
+    background-color: rgba(242, 242, 242, 1);
+    padding: 2px 4px;
+  }
+
+  pre {
+    background: rgb(29, 31, 33);
+    color: rgb(248, 248, 242);
+    white-space: pre;
+    overflow: auto;
+    padding: 1.5rem;
+    margin: 1.5rem 0px;
+    border-radius: 3px;
+
+    > code {
+      color: #f8f8f2;
+      background-color: transparent;
+      text-shadow: 0 1px rgb(0 0 0 / 30%);
+      direction: ltr;
+      text-align: left;
+      white-space: pre;
+      word-spacing: normal;
+      word-break: normal;
+      tab-size: 4;
+      hyphens: none;
+    }
   }
 `
 

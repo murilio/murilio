@@ -3,7 +3,6 @@ import styled from 'styled-components'
 export const Container = styled.footer`
   min-height: 552px;
   padding: 74px 5% 29px;
-  height: 100%;
   background-image: linear-gradient(
     var(--color-roxo),
     var(--color-roxo),
@@ -13,6 +12,10 @@ export const Container = styled.footer`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media only screen and (min-width: 2440px) {
+    padding: 74px 15% 29px;
+  }
 
   .footer {
     display: flex;
@@ -125,6 +128,7 @@ export const Container = styled.footer`
   .subFooter {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 
     > h2 {
       font-style: normal;

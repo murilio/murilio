@@ -1,16 +1,12 @@
 // styles
+import { ReactNode } from 'react'
 import { Container, Title } from './styles'
 
-// components
-import Card from '../Card/CardArticles'
+interface ArticlesProps {
+  children?: ReactNode
+}
 
-const itens = [{
-  id: 1,
-  img: '/articles/input.png',
-  title: 'Máscaras com regex no React JS'
-}]
-
-export default function Articles () {
+export default function Articles ({ children }: ArticlesProps) {
   return (
     <Container id="blog">
       <Title>
@@ -18,9 +14,7 @@ export default function Articles () {
         <span>Aqui tento escrever sobre meus processos, tecnologias e o que der na telha</span>
       </Title>
       <div className='container'>
-        {itens.slice(0, 3).map(item => (
-          <Card key={item.id} img={item.img} title={item.title} />
-        ))}
+        {children}
       </div>
     </Container>
   )

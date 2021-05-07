@@ -19,6 +19,10 @@ export const Container = styled.section`
     margin: 120px 0 88px 0;
   }
 
+  @media only screen and (min-width: 2440px) {
+    padding: 0 15%;
+  }
+
   .details {
     width: 100%;
     margin: 0 0 30px 0;
