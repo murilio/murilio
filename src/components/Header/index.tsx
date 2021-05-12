@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react'
+import Head from 'next/head'
 import Link from 'next/link'
-// import { useRouter } from 'next/router'
+import { useState, useEffect } from 'react'
 
 // style
 import { Container, IconMenu, IconMenuClose, Arrow } from './styles'
@@ -20,11 +20,17 @@ export default function Header ({ subtile, title, description, img }: HeaderProp
   const [bgMenu, setBgMenu] = useState(false)
 
   useEffect(() => {
-    window.onscroll = () => document.documentElement.scrollTop > 150 ? setBgMenu(true) : setBgMenu(false)
+    window.onscroll = () => document.documentElement.scrollTop > 100 ? setBgMenu(true) : setBgMenu(false)
   }, [])
 
   return (
     <>
+      <Head>
+        <title>{title} | Murilio</title>
+        <meta name="description" content={description} />
+        <meta name="keywords" content="HTML, CSS, JavaScript" />
+        <meta name="author" content="Murilio"></meta>
+      </Head>
       <Container>
         <div className='backgroundColor'>
           <div className='colorWhite'></div>
@@ -48,22 +54,22 @@ export default function Header ({ subtile, title, description, img }: HeaderProp
                     </Link>
                   </li>
                   <li>
-                    <Link href='#about'>
+                    <Link href='/#about'>
                       <a>Sobre</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href='#cases'>
+                    <Link href='/#cases'>
                       <a>Meus Cases</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href='#blog'>
+                    <Link href='/#blog'>
                       <a>Blog</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href='#contact'>
+                    <Link href='/#contact'>
                       <a>Contato</a>
                     </Link>
                   </li>

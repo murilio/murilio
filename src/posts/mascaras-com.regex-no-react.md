@@ -2,7 +2,7 @@
 title: 'Máscaras com regex no React JS'
 description: 'Bom, esses dias eu precisei fazer uma máscara para um campo de input, encontrei algumas libs que conseguiram auxiliar na hora de criar a mascara, mas, elas não retornavam o valor ou estavam muito desatualizadas, portanto decidi criar tanto minhas máscara, sem usar nenhuma lib, apenas javascript e regex, vamos lá.'
 date: '2020-12-13'
-thumbnail: '/noticia.jpeg'
+thumbnail: '/nextjs.jpeg'
 ---
 
 ## Máscaras

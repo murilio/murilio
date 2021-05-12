@@ -66,9 +66,50 @@ const GlobalStyle = createGlobalStyle`
     color: var(    --color-roxo);
   }
 
-  /*
-    styles markdown
-  */
+  /* styles markdown */
+
+  h1 {
+    font-size: 32px;
+    line-height: 40px;
+    vertical-align: baseline;
+    letter-spacing: normal;
+    word-spacing: 0px;
+    margin: 24px 0px 16px;
+    padding: 0px 0px 9.6px;
+    font-weight: 600;
+    border-bottom: solid 1px #ddd;
+  }
+
+  h2 {
+    font-size: 24px;
+    line-height: 30px;
+    vertical-align: baseline;
+    letter-spacing: normal;
+    word-spacing: 0px;
+    margin: 24px 0px 16px;
+    padding: 0px 0px 7.2px;
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: 20px;
+    line-height: 25px;
+    vertical-align: baseline;
+    letter-spacing: normal;
+    word-spacing: 0px;
+    margin: 24px 0px 16px;
+    padding: 0px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    vertical-align: baseline;
+    letter-spacing: normal;
+    word-spacing: 0px;
+    margin: 0px 0px 16px;
+    padding: 0px;
+  }
 
   code {
     background-color: rgba(242, 242, 242, 1);
@@ -96,6 +137,10 @@ const GlobalStyle = createGlobalStyle`
       tab-size: 4;
       hyphens: none;
     }
+  }
+
+  ul {
+    padding-left: 20px;
   }
 `
 

@@ -36,6 +36,9 @@ export const Container = styled.footer`
         font-weight: normal;
         font-size: 64px;
         line-height: 54px;
+        margin: 0;
+        padding: 0;
+        border: 0;
 
         > span {
           color: var(--color-contraste);
@@ -55,6 +58,7 @@ export const Container = styled.footer`
         font-weight: 500;
         font-size: 14px;
         line-height: 21px;
+        margin: 0;
       }
 
       div.location {
@@ -65,6 +69,8 @@ export const Container = styled.footer`
           font-weight: normal;
           font-size: 14px;
           line-height: 21px;
+          padding: 0;
+          margin: 0;
         }
       }
     }
@@ -93,6 +99,8 @@ export const Container = styled.footer`
           line-height: 33px;
           color: var(--color-branco);
           margin: 0 0 0 18px;
+          padding: 0;
+          border: 0;
 
           > span {
             font-weight: 800;
@@ -106,15 +114,20 @@ export const Container = styled.footer`
         justify-content: space-between;
         margin: 32px 0 50px 0;
 
-        ul > li > a {
-          font-style: normal;
-          font-weight: normal;
-          font-size: 12px;
-          line-height: 21px;
-          color: var(--color-branco);
+        ul {
+          list-style: none;
+          padding: 0;
 
-          &:hover {
-            color: var(--color-contraste);
+          > li > a {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 21px;
+            color: var(--color-branco);
+
+            &:hover {
+              color: var(--color-contraste);
+            }
           }
         }
 
@@ -136,6 +149,8 @@ export const Container = styled.footer`
       font-size: 16px;
       line-height: 24px;
       color: var(--color-cinza-gelo);
+      padding: 0;
+      margin: 0;
     }
 
     > img {

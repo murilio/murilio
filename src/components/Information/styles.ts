@@ -32,11 +32,14 @@ export const Container = styled.section`
       width: 50%;
     }
 
-    h2 {      font-style: normal;
+    h2 {
+      font-style: normal;
       font-weight: normal;
       font-size: 12px;
       line-height: 18px;
       color: var(--color-contraste);
+      margin: 0;
+      padding: 0;
     }
 
     h1 {
@@ -48,6 +51,9 @@ export const Container = styled.section`
       color: var(--color-roxo);
       display: flex;
       flex-direction: column;
+      margin: 0;
+      padding: 0;
+      border: 0;
 
       &:after {
         content: '';

@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import styled from 'styled-components'
 
 import { GetStaticPaths, GetStaticProps } from 'next'
@@ -21,9 +20,6 @@ import Header from '../../components/Header'
 export default function Post ({ post }: any) {
   return (
     <>
-      <Head>
-        <title>{post.title} | Murilio</title>
-      </Head>
       <Layout>
         <Header
           title={post.title}

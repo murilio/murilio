@@ -2,8 +2,8 @@
 
 ## É **Murilio**, não Murilo
 
-[![Linkedin Badge](https://img.shields.io/badge/-Murilio-0a66c2?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/murilio)](https://www.linkedin.com/in/murilio/)
-[![Instagram Badge](https://img.shields.io/badge/-Murilio-833AB4?style=flat-square&logo=Instagram&logoColor=white&link=https://www.instagram.com/murilio.sw/)](https://www.instagram.com/murilio.sw/)
+[![Linkedin Badge](https://img.shields.io/badge/-Murilio-0a66c2?style=flat-square&logo=Linkedin&logoColor=white&link=https://linkedin.com/in/murilio)](https://linkedin.com/in/murilio/)
+[![Instagram Badge](https://img.shields.io/badge/-Murilio-833AB4?style=flat-square&logo=Instagram&logoColor=white&link=https://instagram.com/murilio.sw/)](https://instagram.com/murilio.sw/)
 
 <br />
 
@@ -22,10 +22,11 @@ console.log('Hello World');
 
 <code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"></code>
 <code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png"></code>
-<code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/docker/docker.png"></code>
 <code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"></code>
 <code><img height="30" src="https://user-images.githubusercontent.com/1680157/87443758-4a5f9600-c5cc-11ea-8f63-92e126a1145b.png"></code>
 <code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/postgresql/postgresql.png"></code>
+<code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/docker/docker.png"></code>
+<code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/go/go.png"></code>
 
 <br />
 
@@ -34,9 +35,11 @@ console.log('Hello World');
 <code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/ubuntu/ubuntu.png"></code>
 <code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/terminal/terminal.png"></code>
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=murilio&layout=compact&theme=dracula)](https://www.murilio.com.br/)
 
-[![Murilio wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=murilio&theme=dracula)](https://www.murilio.com.br/)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=murilio&layout=compact&theme=dracula)](https://murilio.com.br/)
+
+[![Murilio wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=murilio&theme=dracula)](https://murilio.com.br/)
+
 
 ### Projects
 

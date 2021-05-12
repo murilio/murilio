@@ -77,9 +77,11 @@ export const Container = styled.header`
 
         h1 {
           font-weight: 400;
-          margin-left: 18px;
+          margin: 0 0 0 18px;
           font-size: 22px;
           color: var(--color-dark-gray);
+          padding: 0;
+          border: 0;
 
           span {
             font-weight: 800;
@@ -121,7 +123,9 @@ export const Container = styled.header`
             position: relative;
             display: flex;
             flex-direction: column;
+
             list-style: none;
+            padding: 0;
 
             li {
               font-size: 14px;
@@ -235,6 +239,8 @@ export const Container = styled.header`
           font-size: 12px;
           line-height: 18px;
           color: var(--color-roxo);
+          margin: 0;
+          padding: 0;
         }
 
         h1 {
@@ -243,6 +249,10 @@ export const Container = styled.header`
           line-height: clamp(35px, 10vw, 72px);
           font-size: clamp(35px, 10vw, 64px);
           color: var(--color-dark-gray);
+          color: var(--color-dark-gray);
+          margin: 0;
+          padding: 0;
+          border: 0;
         }
 
         span {

@@ -18,7 +18,7 @@ export const Container = styled.section`
     grid-template-columns: 1fr;
     gap: 10px;
 
-    padding: 52px 0;
+    padding: 52px 0 0;
     width: 100%;
 
     @media only screen and (min-width: 650px) {
@@ -34,9 +34,15 @@ export const Container = styled.section`
       flex-direction: column;
       justify-content: space-between;
 
+      padding-bottom: 30px;
+
       img {
+        max-height: 254px;
+        min-height: 254px;
         width: 100%;
+        height: 100%;
         border-radius: 20px;
+        object-fit: cover;
       }
 
       .content {
