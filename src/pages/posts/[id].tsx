@@ -29,7 +29,7 @@ export default function Post ({ post }: any) {
         />
         <Container>
           <h1>{post.title}</h1>
-          <div className="information">
+          <div className="info">
             <span>{convertDateToPtBR(post.date)}</span>
             <div className="share">compartilhar</div>
           </div>
@@ -69,7 +69,7 @@ export const Container = styled.section`
     padding: 2% 15%;
   }
 
-  .information {
+  .info {
     display: flex;
     justify-content: space-between;
 

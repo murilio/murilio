@@ -142,6 +142,26 @@ const GlobalStyle = createGlobalStyle`
   ul {
     padding-left: 20px;
   }
+
+  /* end style markdown */
+
+  /* styles categories */
+  .golang, .go {
+    background-color: #7fd5ea88;
+    color: #007d9c;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 13px;
+  }
+
+  .react-js, .react {
+    background-color: #61dafb88;
+    color: var(--color-preto);
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 13px;
+  }
+  /* end styles categories */
 `
 
 export default GlobalStyle

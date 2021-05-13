@@ -57,6 +57,7 @@ export async function getPostData (id: string) {
     contentHtml,
     title: matterResult.data.title,
     description: matterResult.data.description,
+    category: matterResult.data.category,
     date: matterResult.data.date,
     thumbnail: matterResult.data.thumbnail
   }

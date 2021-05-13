@@ -1,15 +1,18 @@
 import Link from 'next/link'
 
 import { GetStaticProps } from 'next'
-import { getSortedPostsData } from '../lib/posts'
+import { getSortedPostsData } from '../../lib/posts'
+import { convertStringToSlug } from '../../lib/convertStringToSlug'
 
-import Layout from '../components/Layout'
-import Header from '../components/Header'
+import Layout from '../../components/Layout'
+import Header from '../../components/Header'
 
 type Post = {
   id: string
   date: string
+  category: string
   title: string
+  description: string
 }
 
 type Posts = {
@@ -25,19 +28,21 @@ export default function About ({ posts }: Posts) {
         description="Aqui tento escrever sobre meus processos, tecnologias e o que der na telha."
         img="/murilio.png"
       />
-      <ul>
-        {posts.map(({ id, date, title }, index: number) => (
-          <li key={index}>
-            <Link href={`/post/${id}`}>
+      <section>
+        {posts.map(({ id, date, category, title, description }, index: number) => (
+          <div key={index}>
+            <Link href={`/posts/${id}`}>
               <a>{title}</a>
             </Link>
             <br />
             <span>
               {date}
+              <p>category: <span className={convertStringToSlug(category)}>{category}</span></p>
+              {description}
             </span>
-          </li>
+          </div>
         ))}
-      </ul>
+      </section>
     </Layout>
   )
 }

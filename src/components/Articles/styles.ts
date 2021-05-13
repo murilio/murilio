@@ -52,11 +52,17 @@ export const Container = styled.section`
 
         height: 100%;
 
-        p {
-          color: var(--color-dark-gray);
-          font-size: 13px;
-          text-align: left;
-          margin: 5px 0 0 0;
+        .info {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+
+          p {
+            color: var(--color-dark-gray);
+            font-size: 13px;
+            text-align: left;
+            margin: 5px 0;
+          }
         }
 
         h2 {

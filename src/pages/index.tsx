@@ -3,6 +3,7 @@ import { GetStaticProps } from 'next'
 
 import { getSortedPostsData } from '../lib/posts'
 import { convertDateToPtBR } from '../lib/convertDateToPtBR'
+import { convertStringToSlug } from '../lib/convertStringToSlug'
 
 // components
 import Layout from '../components/Layout'
@@ -13,6 +14,7 @@ import Articles from '../components/Articles'
 
 type Post = {
   id: string
+  category: string
   date: string
   title: string,
   thumbnail: string
@@ -26,19 +28,22 @@ export default function Home ({ posts }: Posts) {
   return (
     <Layout>
       <Header
-        title="Sou, Murilio Um Desenvolvedor Fullstack"
+        title="Olá, sou Murilio desenvolvedor fullstack"
         subtile="Olá, bem-vindo"
-        description="Hi, sou Murilio não Murilo, sou apaixonado por desenvolvimento tanto frontend como backend. Estou bastante focado na stack de JavaScript, pois acredito em todo o seu potencial e claramente sou um entusiasta da tecnologia."
+        description="Sou apaixonado por desenvolvimento tanto frontend como backend. Estou bastante focado na stack de JavaScript, pois acredito em todo o seu potencial e claramente sou um entusiasta da tecnologia."
         img="/murilio.png"
       />
       <Information />
       <Articles>
-        {posts.slice(0, 3).map(({ id, date, title, thumbnail }, index: number) => (
-          <Link href={`/post/${id}`} key={index}>
+        {posts.slice(0, 3).map(({ id, category, date, title, thumbnail }, index: number) => (
+          <Link href={`/posts/${id}`} key={index}>
             <a className="articleCard">
               <img src={thumbnail} alt={title} />
               <div className="content">
-                <p>{date}</p>
+                <div className="info">
+                  <p>{date}</p>
+                  <span className={convertStringToSlug(category)}>{category}</span>
+                </div>
                 <h2>{title}</h2>
               </div>
             </a>
@@ -57,6 +62,7 @@ export const getStaticProps: GetStaticProps = async () => {
     return {
       id: post.id,
       date: convertDateToPtBR(post.date),
+      category: post.category,
       title: post.title,
       thumbnail: post.thumbnail
     }
@@ -66,6 +72,6 @@ export const getStaticProps: GetStaticProps = async () => {
     props: {
       posts
     },
-    revalidate: 60 * 60 * 24
+    revalidate: 60 * 60 * 24 // 24 hrs
   }
 }
