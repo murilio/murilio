@@ -7,15 +7,18 @@ import { Container, IconMenu, IconMenuClose, Arrow } from './styles'
 
 // components
 import Social from '../Social'
+import Breadcrumbs from '../Breadcrumbs'
+import { ActiveClassLink } from '../Link'
 
 type HeaderProps = {
   title: string
   subtile: string
   description: string
   img: string
+  breadcrumbs: boolean
 }
 
-export default function Header ({ subtile, title, description, img }: HeaderProps) {
+export default function Header ({ subtile, title, description, img, breadcrumbs }: HeaderProps) {
   const [openMenu, setOpenMenu] = useState(false)
   const [bgMenu, setBgMenu] = useState(false)
 
@@ -32,7 +35,7 @@ export default function Header ({ subtile, title, description, img }: HeaderProp
         <meta name="author" content="Murilio"></meta>
       </Head>
       <Container>
-        <div className='backgroundColor'>
+        <div className='backgroundColor' id="inicio">
           <div className='colorWhite'></div>
           <div className='colorGelo'></div>
         </div>
@@ -49,29 +52,19 @@ export default function Header ({ subtile, title, description, img }: HeaderProp
               <div className="contentMenu">
                 <ul>
                   <li>
-                    <Link href='/'>
-                      <a>Ínicio</a>
-                    </Link>
+                    <ActiveClassLink href='/#inicio' linkName="Início" />
                   </li>
                   <li>
-                    <Link href='/#about'>
-                      <a>Sobre</a>
-                    </Link>
+                    <ActiveClassLink href='/#about' linkName="Sobre" />
                   </li>
                   <li>
-                    <Link href='/#cases'>
-                      <a>Meus Cases</a>
-                    </Link>
+                    <ActiveClassLink href='/#cases' linkName=" Meus Cases"/>
                   </li>
                   <li>
-                    <Link href='/#blog'>
-                      <a>Blog</a>
-                    </Link>
+                    <ActiveClassLink href='/#blog' linkName="Blog" />
                   </li>
                   <li>
-                    <Link href='/#contact'>
-                      <a>Contato</a>
-                    </Link>
+                    <ActiveClassLink href='/#contact' linkName="Contato" />
                   </li>
                 </ul>
                 <IconMenuClose
@@ -91,6 +84,9 @@ export default function Header ({ subtile, title, description, img }: HeaderProp
 
           <div className='content'>
             <div className='contentLeft'>
+              {breadcrumbs && (
+                <Breadcrumbs />
+              )}
               <h2>{subtile}</h2>
               <h1>{title}</h1>
               <span>{description}</span>

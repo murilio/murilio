@@ -67,7 +67,6 @@ const GlobalStyle = createGlobalStyle`
   }
 
   /* styles markdown */
-
   h1 {
     font-size: 32px;
     line-height: 40px;
@@ -142,14 +141,13 @@ const GlobalStyle = createGlobalStyle`
   ul {
     padding-left: 20px;
   }
-
   /* end style markdown */
 
   /* styles categories */
   .golang, .go {
     background-color: #7fd5ea88;
     color: #007d9c;
-    padding: 5px;
+    padding: 2px 8px;
     border-radius: 4px;
     font-size: 13px;
   }
@@ -157,7 +155,7 @@ const GlobalStyle = createGlobalStyle`
   .react-js, .react {
     background-color: #61dafb88;
     color: var(--color-preto);
-    padding: 5px;
+    padding: 2px 8px;
     border-radius: 4px;
     font-size: 13px;
   }

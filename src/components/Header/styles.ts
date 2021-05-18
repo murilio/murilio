@@ -212,10 +212,10 @@ export const Container = styled.header`
     .scrollMenu {
       box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
       background-color: var(--color-branco);
-      max-height: 50px;
+      max-height: 40px;
 
       > .logo > img {
-        height: 28px;
+        height: 25px;
       }
     }
 

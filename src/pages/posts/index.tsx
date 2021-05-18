@@ -13,6 +13,7 @@ type Post = {
   category: string
   title: string
   description: string
+  thumbnail: string
 }
 
 type Posts = {
@@ -27,9 +28,10 @@ export default function About ({ posts }: Posts) {
         subtile="Artigos"
         description="Aqui tento escrever sobre meus processos, tecnologias e o que der na telha."
         img="/murilio.png"
+        breadcrumbs={true}
       />
       <section>
-        {posts.map(({ id, date, category, title, description }, index: number) => (
+        {posts.map(({ id, date, category, title, description, thumbnail }, index: number) => (
           <div key={index}>
             <Link href={`/posts/${id}`}>
               <a>{title}</a>
@@ -39,6 +41,7 @@ export default function About ({ posts }: Posts) {
               {date}
               <p>category: <span className={convertStringToSlug(category)}>{category}</span></p>
               {description}
+              <img src={thumbnail} alt="" width="100" />
             </span>
           </div>
         ))}

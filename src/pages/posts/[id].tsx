@@ -26,6 +26,7 @@ export default function Post ({ post }: any) {
           subtile={convertDateToPtBR(post.date)}
           description={post.description}
           img={post.thumbnail}
+          breadcrumbs={true}
         />
         <Container>
           <h1>{post.title}</h1>

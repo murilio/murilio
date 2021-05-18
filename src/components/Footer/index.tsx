@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import { ActiveClassLink } from '../Link'
 
 // styles
 import { Container } from './styles'
@@ -30,29 +30,19 @@ export default function Footer () {
           <div className='subMenu'>
             <ul>
               <li>
-                <Link href='/'>
-                  <a>Início</a>
-                </Link>
+                <ActiveClassLink href='/#inicio' linkName="Início" />
               </li>
               <li>
-                <Link href='#about'>
-                  <a>Sobre</a>
-                </Link>
+                <ActiveClassLink href='/#about' linkName="Sobre" />
               </li>
               <li>
-                <Link href='#cases'>
-                  <a>Cases</a>
-                </Link>
+                <ActiveClassLink href='/#cases' linkName="Cases" />
               </li>
               <li>
-                <Link href='#blog'>
-                  <a>Blog</a>
-                </Link>
+                <ActiveClassLink href='/#blog' linkName="Blog" />
               </li>
               <li>
-                <Link href='#contact'>
-                  <a>Contato</a>
-                </Link>
+                <ActiveClassLink href='/#contact' linkName="Contato" />
               </li>
             </ul>
             <ul>

@@ -7,7 +7,6 @@ import { convertStringToSlug } from '../lib/convertStringToSlug'
 
 // components
 import Layout from '../components/Layout'
-
 import Header from '../components/Header'
 import Information from '../components/Information'
 import Articles from '../components/Articles'
@@ -32,6 +31,7 @@ export default function Home ({ posts }: Posts) {
         subtile="Olá, bem-vindo"
         description="Sou apaixonado por desenvolvimento tanto frontend como backend. Estou bastante focado na stack de JavaScript, pois acredito em todo o seu potencial e claramente sou um entusiasta da tecnologia."
         img="/murilio.png"
+        breadcrumbs={false}
       />
       <Information />
       <Articles>
