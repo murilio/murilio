@@ -71,8 +71,12 @@ export const Container = styled.header`
         cursor: pointer;
 
         img {
-          height: 39px;
+          height: 30px;
           transition: all 0.2s;
+
+          @media only screen and (min-width: 768px) {
+            height: 39px;
+          }
         }
 
         h1 {

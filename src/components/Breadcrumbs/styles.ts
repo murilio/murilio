@@ -9,6 +9,7 @@ export const Container = styled.ul`
   width: max-content;
   background-color: var(--color-cinza-gelo);
   border-radius: 4px;
+  width: 100%;
   display: flex;
   align-items: center;
 
@@ -28,6 +29,10 @@ export const Container = styled.ul`
     > a {
       color: var(--color-dark-gray);
       padding: 0 13px;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
     }
   }
 `

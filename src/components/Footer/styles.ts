@@ -39,6 +39,9 @@ export const Container = styled.footer`
         margin: 0;
         padding: 0;
         border: 0;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
 
         > span {
           color: var(--color-contraste);
