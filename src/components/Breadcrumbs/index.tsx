@@ -31,13 +31,10 @@ export default function Breadcrumbs () {
         <ActiveClassLink href="/#inicio" linkName="Início" />
       </li>
       {breadcrumbs.map((breadcrumb, index: number) => (
-        <>
+        <li key={index}>
           <ArrowLeft />
-          <li key={index}>
-            {/* {breadcrumb.breadcrumb === '' ? 'Ínicio' : convertBreadcrumb(breadcrumb.breadcrumb)} */}
-            <ActiveClassLink href={breadcrumb.href} linkName={convertSlugToString(breadcrumb.breadcrumb)} />
-          </li>
-        </>
+          <ActiveClassLink href={breadcrumb.href} linkName={convertSlugToString(breadcrumb.breadcrumb)} />
+        </li>
       ))}
     </Container>
   )

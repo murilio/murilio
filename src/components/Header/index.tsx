@@ -31,8 +31,10 @@ export default function Header ({ subtile, title, description, img, breadcrumbs 
       <Head>
         <title>{title} | Murilio</title>
         <meta name="description" content={description} />
-        <meta name="keywords" content="HTML, CSS, JavaScript" />
-        <meta name="author" content="Murilio"></meta>
+        <meta name="keywords" content="HTML, CSS, JavaScript, NextJS, Golang" />
+        <meta name="author" content="Murilio" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <Container>
         <div className='backgroundColor' id="inicio">
@@ -51,21 +53,11 @@ export default function Header ({ subtile, title, description, img, breadcrumbs 
             <nav className={openMenu ? 'itens itensOpen' : 'itens'}>
               <div className="contentMenu">
                 <ul>
-                  <li>
-                    <ActiveClassLink href='/#inicio' linkName="Início" />
-                  </li>
-                  <li>
-                    <ActiveClassLink href='/#about' linkName="Sobre" />
-                  </li>
-                  <li>
-                    <ActiveClassLink href='/#cases' linkName=" Meus Cases"/>
-                  </li>
-                  <li>
-                    <ActiveClassLink href='/#blog' linkName="Blog" />
-                  </li>
-                  <li>
-                    <ActiveClassLink href='/#contact' linkName="Contato" />
-                  </li>
+                  <li><ActiveClassLink href='/#inicio' linkName="Início" /></li>
+                  <li><ActiveClassLink href='/#about' linkName="Sobre" /></li>
+                  <li><ActiveClassLink href='/#cases' linkName=" Meus Cases"/></li>
+                  <li><ActiveClassLink href='/#blog' linkName="Blog" /></li>
+                  <li><ActiveClassLink href='/#contact' linkName="Contato" /></li>
                 </ul>
                 <IconMenuClose
                   className='closeMenu'
@@ -84,9 +76,7 @@ export default function Header ({ subtile, title, description, img, breadcrumbs 
 
           <div className='content'>
             <div className='contentLeft'>
-              {breadcrumbs && (
-                <Breadcrumbs />
-              )}
+              {breadcrumbs && (<Breadcrumbs />)}
               <h2>{subtile}</h2>
               <h1>{title}</h1>
               <span>{description}</span>

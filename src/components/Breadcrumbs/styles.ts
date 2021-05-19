@@ -18,6 +18,9 @@ export const Container = styled.ul`
   line-height: 18px;
 
   > li {
+    display: flex;
+    align-items: center;
+
     > .active {
       color: var(--color-contraste);
     }
