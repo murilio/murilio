@@ -29,21 +29,11 @@ export default function Footer () {
           </div>
           <div className='subMenu'>
             <ul>
-              <li>
-                <ActiveClassLink href='/#inicio' linkName="Início" />
-              </li>
-              <li>
-                <ActiveClassLink href='/#about' linkName="Sobre" />
-              </li>
-              <li>
-                <ActiveClassLink href='/#cases' linkName="Cases" />
-              </li>
-              <li>
-                <ActiveClassLink href='/#blog' linkName="Blog" />
-              </li>
-              <li>
-                <ActiveClassLink href='/#contact' linkName="Contato" />
-              </li>
+              <li><ActiveClassLink href='/#inicio' linkName="Início" /></li>
+              <li><ActiveClassLink href='/#about' linkName="Sobre" /></li>
+              {/* <li><ActiveClassLink href='/#cases' linkName="Cases" /></li> */}
+              <li><ActiveClassLink href='/#blog' linkName="Blog" /></li>
+              <li><ActiveClassLink href='/#contact' linkName="Contato" /></li>
             </ul>
             <ul>
               <li>

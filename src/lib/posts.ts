@@ -29,6 +29,8 @@ export function getSortedPostsData () {
   return allPostsData.sort((a, b) => a.date < b.date ? 1 : -1)
 }
 
+export function getLastPostData () {}
+
 // pegando os posts pelo ID
 // export function getAllPostIds () {
 //   const fileNames = fs.readdirSync(postsDirectory)

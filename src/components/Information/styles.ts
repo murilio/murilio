@@ -6,7 +6,7 @@ import { SiJavascript } from 'react-icons/si'
 
 export const Container = styled.section`
   padding: 0 5%;
-  margin: 50px 0 88px 0;
+  margin: 50px 0 0 0;
 
   display: flex;
   flex-direction: column;
@@ -16,7 +16,7 @@ export const Container = styled.section`
   @media only screen and (min-width: 1024px) {
     flex-direction: row;
     align-items: flex-start;
-    margin: 120px 0 88px 0;
+    margin: 120px 0 0 0;
   }
 
   @media only screen and (min-width: 2440px) {

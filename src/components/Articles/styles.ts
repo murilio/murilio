@@ -16,7 +16,7 @@ export const Container = styled.section`
   > .container {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 10px;
+    gap: 30px;
 
     padding: 52px 0 0;
     width: 100%;
@@ -33,8 +33,6 @@ export const Container = styled.section`
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-
-      padding-bottom: 30px;
 
       img {
         max-height: 254px;
@@ -101,5 +99,26 @@ export const Title = styled.div`
 
   > span {
     color: var(--color-contraste);
+  }
+`
+
+export const ViewAll = styled.div`
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+
+  > a {
+    display: inline-block;
+    margin: 50px 0 0 0;
+    background-color: var(--color-contraste);
+    border-radius: 20px;
+    color: var(--color-branco);
+    padding: 19px 65px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: var(--color-dark-roxo);
+    }
   }
 `

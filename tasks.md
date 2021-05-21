@@ -1,3 +1,4 @@
 - seo do site
 - compartilhar o post
 - melhorar pagina de listagem de posts
+- melhorar chamada dos posts na home

@@ -8,7 +8,7 @@ import { convertDateToPtBR } from '../../lib/convertDateToPtBR'
 import Layout from '../../components/Layout'
 import Header from '../../components/Header'
 
-// type PostProps = {
+// interface PostProps {
 //   id: string
 //   date: string
 //   title: string,

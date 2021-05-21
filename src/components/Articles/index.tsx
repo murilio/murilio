@@ -1,6 +1,7 @@
 // styles
+import Link from 'next/link'
 import { ReactNode } from 'react'
-import { Container, Title } from './styles'
+import { Container, Title, ViewAll } from './styles'
 
 interface ArticlesProps {
   children?: ReactNode
@@ -16,6 +17,11 @@ export default function Articles ({ children }: ArticlesProps) {
       <div className='container'>
         {children}
       </div>
+      <ViewAll>
+        <Link href="/posts">
+          <a>Ver todos posts</a>
+        </Link>
+      </ViewAll>
     </Container>
   )
 }

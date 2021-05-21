@@ -55,7 +55,7 @@ export default function Header ({ subtile, title, description, img, breadcrumbs 
                 <ul>
                   <li><ActiveClassLink href='/#inicio' linkName="Início" /></li>
                   <li><ActiveClassLink href='/#about' linkName="Sobre" /></li>
-                  <li><ActiveClassLink href='/#cases' linkName=" Meus Cases"/></li>
+                  {/* <li><ActiveClassLink href='/#cases' linkName=" Meus Cases"/></li> */}
                   <li><ActiveClassLink href='/#blog' linkName="Blog" /></li>
                   <li><ActiveClassLink href='/#contact' linkName="Contato" /></li>
                 </ul>
