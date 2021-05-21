@@ -111,7 +111,9 @@ const GlobalStyle = createGlobalStyle`
   }
 
   code {
-    background-color: rgba(242, 242, 242, 1);
+    background-color: var(--color-cinza-gelo);
+    color: var(--color-contraste);
+    font-size: 15px;
     padding: 2px 4px;
   }
 
@@ -144,20 +146,28 @@ const GlobalStyle = createGlobalStyle`
   /* end style markdown */
 
   /* styles categories */
-  .golang, .go {
-    background-color: #7fd5ea88;
-    color: #007d9c;
+  .golang, .go,
+  .react-js, .react,
+  .javascript, .js {
     padding: 2px 8px;
     border-radius: 4px;
     font-size: 13px;
   }
 
+  .golang, .go {
+    background-color: #7fd5ea88;
+    color: #007d9c;
+
+  }
+
   .react-js, .react {
     background-color: #61dafb88;
     color: var(--color-preto);
-    padding: 2px 8px;
-    border-radius: 4px;
-    font-size: 13px;
+  }
+
+  .javascript, .js {
+    background-color: #fbbb19;
+    color: var(--color-preto);
   }
   /* end styles categories */
 `

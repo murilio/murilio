@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.footer`
-  min-height: 552px;
+  min-height: 490px;
   padding: 74px 5% 29px;
   background-image: linear-gradient(
     var(--color-roxo),
