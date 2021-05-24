@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 
-import { convertSlugToString } from '../../lib/convertSlugToString'
-import { Container, ArrowLeft } from './styles'
 import { ActiveClassLink } from '../Link'
+import { Container, ArrowLeft } from './styles'
+import { convertSlugToString } from '../../utils/convertSlugToString'
 
 export default function Breadcrumbs () {
   const router = useRouter()

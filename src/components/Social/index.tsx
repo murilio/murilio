@@ -6,16 +6,22 @@ export default function Social () {
       <a
         href='https://linkedin.com/in/murilio'
         target='_blank'
-        rel='noreferrer'>
+        rel='noreferrer'
+      >
         <IconLinkedin />
       </a>
-      <a href='https://github.com/murilio' target='_blank' rel='noreferrer'>
+      <a
+        href='https://github.com/murilio'
+        target='_blank'
+        rel='noreferrer'
+      >
         <IconGithub />
       </a>
       <a
         href='https://www.instagram.com/murilio.sw/'
         target='_blank'
-        rel='noreferrer'>
+        rel='noreferrer'
+      >
         <IconInstagram />
       </a>
     </Container>

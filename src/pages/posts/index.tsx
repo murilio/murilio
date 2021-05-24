@@ -3,8 +3,8 @@ import Link from 'next/link'
 
 import { GetStaticProps } from 'next'
 import { getSortedPostsData } from '../../lib/posts'
-import { convertDateToPtBR } from '../../lib/convertDateToPtBR'
-import { convertStringToSlug } from '../../lib/convertStringToSlug'
+import { convertDateToPtBR } from '../../utils/convertDateToPtBR'
+import { convertStringToSlug } from '../../utils/convertStringToSlug'
 
 import Layout from '../../components/Layout'
 import Header from '../../components/Header'
@@ -27,9 +27,9 @@ export default function Posts ({ posts }: PostsProps) {
     <Layout>
       <Header
         title="Todos os artigos"
-        subtile="Artigos"
+        subtitle="Artigos"
         description="Aqui tento escrever sobre meus processos, tecnologias e o que der na telha."
-        img="/murilio.png"
+        img="/default.png"
         breadcrumbs={true}
       />
       <Container>

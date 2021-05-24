@@ -1,10 +1,5 @@
 import styled from 'styled-components'
 
-// icons
-import { CgMenu } from 'react-icons/cg'
-import { IoIosClose } from 'react-icons/io'
-import { AiOutlineArrowDown } from 'react-icons/ai'
-
 export const Container = styled.header`
   height: 100vh;
   width: 100%;
@@ -87,13 +82,13 @@ export const Container = styled.header`
           padding: 0;
           border: 0;
 
-          span {
+          strong {
             font-weight: 800;
           }
         }
       }
 
-      .itens {
+      .navigation {
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -101,103 +96,20 @@ export const Container = styled.header`
         position: fixed;
         top: 0;
         left: -100vw;
-        width: 100vw;
         height: 100vh;
         transition: all 0.3s;
-
         background-color: rgba(255, 255, 255, 0.3);
 
-        > .contentMenu {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: space-around;
-
-          height: 100%;
-          width: 75%;
-          background: linear-gradient(
-            45deg,
-            var(--color-contraste),
-            var(--color-roxo)
-          );
-
-          position: relative;
-
-          ul {
-            position: relative;
-            display: flex;
-            flex-direction: column;
-
-            list-style: none;
-            padding: 0;
-
-            li {
-              font-size: 14px;
-              color: var(--color-gray);
-
-              a {
-                padding: 0 15px;
-                color: var(--color-gray);
-
-                &:hover {
-                  color: var(--color-contraste);
-                }
-              }
-
-              .active {
-                color: var(--color-contraste);
-              }
-            }
-          }
-        }
-
-        .divWithCloseMenu {
-          width: 25%;
-          height: 100%;
-        }
-
-        .closeMenu {
-          position: absolute;
-          top: 20px;
-          right: 20px;
-        }
-
-        @media only screen and (min-width: 768px) {
+        @media screen and (min-width: 768px) {
           position: initial;
           display: flex;
           height: auto;
           width: auto;
           background: transparent;
-
-          .contentMenu {
-            height: auto;
-            width: auto;
-            background: transparent;
-
-            ul {
-              flex-direction: row;
-
-              li > a {
-                font-size: 14px;
-              }
-            }
-
-            > div {
-              display: none;
-            }
-
-            .closeMenu {
-              display: none;
-            }
-          }
-
-          .divWithCloseMenu {
-            display: none;
-          }
         }
       }
 
-      .itensOpen {
+      .navigationOpen {
         left: 0vw;
         transition: all 0.3s;
 
@@ -209,6 +121,16 @@ export const Container = styled.header`
               font-size: 14px;
             }
           }
+        }
+      }
+
+      > .btn-menu {
+        color: var(--color-roxo);
+        font-size: 25px;
+        cursor: pointer;
+
+        @media only screen and (min-width: 768px) {
+          display: none;
         }
       }
     }
@@ -320,19 +242,7 @@ export const Container = styled.header`
   }
 `
 
-export const IconMenu = styled(CgMenu)`
-  color: var(--color-roxo);
-  font-size: 25px;
-  cursor: pointer;
-`
-
-export const IconMenuClose = styled(IoIosClose)`
-  font-size: 45px;
-  color: var(--color-branco);
-  cursor: pointer;
-`
-
-export const Arrow = styled(AiOutlineArrowDown)`
+export const ArrowContent = styled.div`
   background-color: var(--color-contraste);
   color: var(--color-gray);
   border-radius: 30px;
@@ -340,6 +250,9 @@ export const Arrow = styled(AiOutlineArrowDown)`
   padding: 10px;
   height: 70px;
   width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   animation: boxShadowAnimation 1s infinite;
 
   @keyframes boxShadowAnimation {

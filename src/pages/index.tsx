@@ -2,8 +2,8 @@ import Link from 'next/link'
 import { GetStaticProps } from 'next'
 
 import { getSortedPostsData } from '../lib/posts'
-import { convertDateToPtBR } from '../lib/convertDateToPtBR'
-import { convertStringToSlug } from '../lib/convertStringToSlug'
+import { convertDateToPtBR } from '../utils/convertDateToPtBR'
+import { convertStringToSlug } from '../utils/convertStringToSlug'
 
 // components
 import Layout from '../components/Layout'
@@ -28,7 +28,7 @@ export default function Home ({ posts }: Posts) {
     <Layout>
       <Header
         title="Olá, sou Murilio desenvolvedor fullstack"
-        subtile="Olá, bem-vindo"
+        subtitle="Olá, bem-vindo"
         description="Sou apaixonado por desenvolvimento tanto frontend como backend. Estou bastante focado na stack de JavaScript, pois acredito em todo o seu potencial e claramente sou um entusiasta da tecnologia."
         img="/murilio.png"
         breadcrumbs={false}

@@ -3,24 +3,24 @@ import Link from 'next/link'
 import { useState, useEffect } from 'react'
 
 // style
-import { Container, IconMenu, IconMenuClose, Arrow } from './styles'
+import { Container, ArrowContent } from './styles'
 
 // components
-import Social from '../Social'
 import Breadcrumbs from '../Breadcrumbs'
-import { ActiveClassLink } from '../Link'
+import Menu from '../Menu'
+import useDetectClickOutside from '../../hooks/useDetectClickOutside'
 
 type HeaderProps = {
   title: string
-  subtile: string
+  subtitle: string
   description: string
   img: string
   breadcrumbs: boolean
 }
 
-export default function Header ({ subtile, title, description, img, breadcrumbs }: HeaderProps) {
-  const [openMenu, setOpenMenu] = useState(false)
+export default function Header ({ subtitle, title, description, img, breadcrumbs }: HeaderProps) {
   const [bgMenu, setBgMenu] = useState(false)
+  const { ref, componentVisible, setComponentVisible } = useDetectClickOutside(false)
 
   useEffect(() => {
     window.onscroll = () => document.documentElement.scrollTop > 100 ? setBgMenu(true) : setBgMenu(false)
@@ -36,16 +36,11 @@ export default function Header ({ subtile, title, description, img, breadcrumbs 
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:image" content={`https://murilio.com.br${img}`} />
-        <meta property="og:image:type" content="image/*" />
+        <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="800" />
         <meta property="og:image:height" content="600" />
         <meta property="og:site_name" content="Murilio" />
         <meta property="og:type" content="article" />
-
-        {/* <meta property="article:author" content="Murilio" />
-        <meta property="article:section" content="Posts do blog | Murilio dev" />
-        <meta property="article:tag" content="HTML, CSS, JavaScript, NextJS, Golang" />
-        <meta property="article:published_time" content="date_time" /> */}
 
         <meta name="keywords" content="HTML, CSS, JavaScript, NextJS, Golang" />
         <meta name="author" content="Murilio" />
@@ -62,38 +57,20 @@ export default function Header ({ subtile, title, description, img, breadcrumbs 
             <Link href='/'>
               <a className='logo'>
                 <img src="/favicon.png" alt='Favicon' />
-                <h1>muri<span>dev</span></h1>
+                <h1>muri<strong>dev</strong></h1>
               </a>
             </Link>
 
-            <nav className={openMenu ? 'itens itensOpen' : 'itens'}>
-              <div className="contentMenu">
-                <ul>
-                  <li><ActiveClassLink href='/#inicio' linkName="Início" /></li>
-                  <li><ActiveClassLink href='/#about' linkName="Sobre" /></li>
-                  {/* <li><ActiveClassLink href='/#cases' linkName=" Meus Cases"/></li> */}
-                  <li><ActiveClassLink href='/#blog' linkName="Blog" /></li>
-                  <li><ActiveClassLink href='/#contact' linkName="Contato" /></li>
-                </ul>
-                <IconMenuClose
-                  className='closeMenu'
-                  onClick={() => setOpenMenu(!openMenu)}
-                />
-                <Social />
-              </div>
-              <div className="divWithCloseMenu" onClick={() => setOpenMenu(!openMenu)}></div>
-            </nav>
-            <Social />
-            <IconMenu
-              className='openMenu'
-              onClick={() => setOpenMenu(!openMenu)}
-            />
+            <div ref={ref} className={componentVisible ? 'navigation navigationOpen' : 'navigation'}>
+              <Menu />
+            </div>
+            <span className="material-icons-outlined btn-menu" onClick={() => setComponentVisible(true)}>menu</span>
           </div>
 
           <div className='content'>
             <div className='contentLeft'>
               {breadcrumbs && (<Breadcrumbs />)}
-              <h2>{subtile}</h2>
+              <h2>{subtitle}</h2>
               <h1>{title}</h1>
               <span>{description}</span>
             </div>
@@ -103,10 +80,12 @@ export default function Header ({ subtile, title, description, img, breadcrumbs 
           </div>
         </div>
         <a className='arrow' href='#content'>
-          <Arrow />
+          <ArrowContent>
+            <span className="material-icons-outlined">south</span>
+          </ArrowContent>
         </a>
       </Container>
-      <div id="content"></div>
+      <div id="content" />
     </>
   )
 }

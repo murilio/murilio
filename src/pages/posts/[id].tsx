@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { GetStaticPaths, GetStaticProps } from 'next'
 
 import { getPostData } from '../../lib/posts'
-import { convertDateToPtBR } from '../../lib/convertDateToPtBR'
+import { convertDateToPtBR } from '../../utils/convertDateToPtBR'
 
 import Layout from '../../components/Layout'
 import Header from '../../components/Header'
@@ -24,7 +24,7 @@ export default function Post ({ post }: PostProps) {
     <Layout>
       <Header
         title={post.title}
-        subtile={post.date}
+        subtitle={post.date}
         description={post.description}
         img={post.thumbnail}
         breadcrumbs={true}
