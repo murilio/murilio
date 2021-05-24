@@ -3,7 +3,7 @@ title: 'Converter string em slug e slug em string usando regex'
 description: 'Nesse tutorial vou mostrar como criar funções com JavaScript para criar um slug de acordo com um texto e fazer o processo inverso, converter um slug em string usando javascript e regex'
 category: 'JavaScript'
 date: '2021-05-21'
-thumbnail: '/javascript/javascript-1.jpg'
+thumbnail: '/javascript/javascript-1.png'
 ---
 
 ## Motivação

@@ -36,7 +36,7 @@ export default function Header ({ subtile, title, description, img, breadcrumbs 
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:image" content={`https://murilio.com.br${img}`} />
-        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:type" content="image/*" />
         <meta property="og:image:width" content="800" />
         <meta property="og:image:height" content="600" />
         <meta property="og:site_name" content="Murilio" />
