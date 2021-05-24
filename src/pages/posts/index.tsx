@@ -3,12 +3,13 @@ import Link from 'next/link'
 
 import { GetStaticProps } from 'next'
 import { getSortedPostsData } from '../../lib/posts'
+import { convertDateToPtBR } from '../../lib/convertDateToPtBR'
 import { convertStringToSlug } from '../../lib/convertStringToSlug'
 
 import Layout from '../../components/Layout'
 import Header from '../../components/Header'
 
-type Post = {
+interface IPost {
   id: string
   date: string
   category: string
@@ -17,11 +18,11 @@ type Post = {
   thumbnail: string
 }
 
-type Posts = {
-  posts: Post[]
+type PostsProps = {
+  posts: IPost[]
 }
 
-export default function About ({ posts }: Posts) {
+export default function Posts ({ posts }: PostsProps) {
   return (
     <Layout>
       <Header
@@ -54,7 +55,18 @@ export default function About ({ posts }: Posts) {
 
 // gera o HTML estático da página
 export const getStaticProps: GetStaticProps = async () => {
-  const posts = getSortedPostsData()
+  const data = getSortedPostsData()
+
+  const posts = data.map((post: IPost) => {
+    return {
+      id: post.id,
+      date: convertDateToPtBR(post.date),
+      category: post.category,
+      title: post.title,
+      thumbnail: post.thumbnail
+    }
+  })
+
   return {
     props: {
       posts

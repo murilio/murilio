@@ -16,7 +16,7 @@ console.log('Hello World');
 ### Sobre mim
 
 - :earth_americas: João Pessoa - Paraíba
-- :telescope: No momento estou estudando Typescript e Docker
+- :telescope: No momento estou estudando Typescript, Docker e Golang
 
 ### Linguagens e ferramentas:
 
@@ -39,7 +39,6 @@ console.log('Hello World');
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=murilio&layout=compact&theme=dracula)](https://murilio.com.br/)
 
 [![Murilio wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=murilio&theme=dracula)](https://murilio.com.br/)
-
 
 ### Projects
 

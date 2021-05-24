@@ -8,8 +8,8 @@ import { convertStringToSlug } from '../lib/convertStringToSlug'
 // components
 import Layout from '../components/Layout'
 import Header from '../components/Header'
-import Information from '../components/Information'
 import Articles from '../components/Articles'
+import Information from '../components/Information'
 
 type Post = {
   id: string

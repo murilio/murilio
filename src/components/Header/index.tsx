@@ -31,6 +31,22 @@ export default function Header ({ subtile, title, description, img, breadcrumbs 
       <Head>
         <title>{title} | Murilio</title>
         <meta name="description" content={description} />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:url" content={`https://murilio.com.br${img}`} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content={`https://murilio.com.br${img}`} />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="800" />
+        <meta property="og:image:height" content="600" />
+        <meta property="og:site_name" content="Murilio" />
+        <meta property="og:type" content="article" />
+
+        {/* <meta property="article:author" content="Murilio" />
+        <meta property="article:section" content="Posts do blog | Murilio dev" />
+        <meta property="article:tag" content="HTML, CSS, JavaScript, NextJS, Golang" />
+        <meta property="article:published_time" content="date_time" /> */}
+
         <meta name="keywords" content="HTML, CSS, JavaScript, NextJS, Golang" />
         <meta name="author" content="Murilio" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />

@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-
 import { GetStaticPaths, GetStaticProps } from 'next'
 
 import { getPostData } from '../../lib/posts'
@@ -8,36 +7,37 @@ import { convertDateToPtBR } from '../../lib/convertDateToPtBR'
 import Layout from '../../components/Layout'
 import Header from '../../components/Header'
 
-// interface PostProps {
-//   id: string
-//   date: string
-//   title: string,
-//   description: string,
-//   thumbnail: string
-//   contentHtml: string
-// }
+interface IPostProps {
+  date: string
+  title: string,
+  description: string,
+  thumbnail: string
+  contentHtml: string
+}
 
-export default function Post ({ post }: any) {
+type PostProps = {
+  post: IPostProps
+}
+
+export default function Post ({ post }: PostProps) {
   return (
-    <>
-      <Layout>
-        <Header
-          title={post.title}
-          subtile={convertDateToPtBR(post.date)}
-          description={post.description}
-          img={post.thumbnail}
-          breadcrumbs={true}
-        />
-        <Container>
-          <h1>{post.title}</h1>
-          <div className="info">
-            <span>{convertDateToPtBR(post.date)}</span>
-            <div className="share">compartilhar</div>
-          </div>
-          <div dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
-        </Container>
-      </Layout>
-    </>
+    <Layout>
+      <Header
+        title={post.title}
+        subtile={post.date}
+        description={post.description}
+        img={post.thumbnail}
+        breadcrumbs={true}
+      />
+      <Container>
+        <h1>{post.title}</h1>
+        <div className="info">
+          <span>{post.date}</span>
+          <div className="share">compartilhar</div>
+        </div>
+        <div dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
+      </Container>
+    </Layout>
   )
 }
 
@@ -53,7 +53,15 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps = async (ctx) => {
   const { id } = ctx.params
 
-  const post = await getPostData(String(id))
+  const data = await getPostData(String(id))
+
+  const post = {
+    date: convertDateToPtBR(data.date),
+    title: data.title,
+    description: data.description,
+    thumbnail: data.thumbnail,
+    contentHtml: data.contentHtml
+  }
 
   return {
     props: {
