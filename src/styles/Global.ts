@@ -8,9 +8,10 @@ const GlobalStyle = createGlobalStyle`
     --color-dark-gray: #505050;
     --color-gray: #CFCFD2;
     --color-dark-roxo: #1E1B57;
-    --color-soft-roxo: #787698;
-    --color-roxo: #534CCE;
+    --color-soft-roxo: #57566f;
+    --color-roxo: #534cce;
     --color-contraste: #F14D9C;
+    --color-contraste-dark: #993163;
   }
 
   ::selection {
@@ -63,7 +64,7 @@ const GlobalStyle = createGlobalStyle`
 
   a {
     text-decoration: none;
-    color: var(    --color-roxo);
+    color: var(--color-roxo);
   }
 
   /* styles markdown */
@@ -156,7 +157,7 @@ const GlobalStyle = createGlobalStyle`
 
   .golang, .go {
     background-color: #7fd5ea88;
-    color: #007d9c;
+    color: #004d61;
 
   }
 

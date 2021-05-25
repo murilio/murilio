@@ -1,2 +1,1 @@
-- compartilhar o post
 - melhorar chamada dos posts na home

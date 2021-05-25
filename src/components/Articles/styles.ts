@@ -98,7 +98,7 @@ export const Title = styled.div`
   }
 
   > span {
-    color: var(--color-contraste);
+    color: var(--color-contraste-dark);
   }
 `
 

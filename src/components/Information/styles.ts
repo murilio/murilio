@@ -37,7 +37,7 @@ export const Container = styled.section`
       font-weight: normal;
       font-size: 12px;
       line-height: 18px;
-      color: var(--color-contraste);
+      color: var(--color-contraste-dark);
       margin: 0;
       padding: 0;
     }
@@ -80,7 +80,7 @@ export const Container = styled.section`
     > a {
       display: inline-block;
       margin: 50px 0 0 0;
-      background-color: var(--color-contraste);
+      background-color: var(--color-contraste-dark);
       border-radius: 20px;
       color: var(--color-branco);
       padding: 19px 65px;
@@ -120,7 +120,7 @@ export const Container = styled.section`
         font-size: 12px;
         line-height: 18px;
         margin-bottom: 18px;
-        color: var(--color-contraste);
+        color: var(--color-contraste-dark);
       }
 
       .cardTechs {
