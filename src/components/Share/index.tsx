@@ -12,6 +12,10 @@ export default function Share ({ title, description }: IShareProps) {
   const copyToClipboard = (e: string) => {
     navigator.clipboard.writeText(e)
     setCopySuccess(true)
+
+    setTimeout(() => {
+      setCopySuccess(false)
+    }, 3000)
   }
 
   const sharePost = () => {
@@ -34,10 +38,10 @@ export default function Share ({ title, description }: IShareProps) {
     <Container>
       <div className="web">
         <button onClick={() => copyToClipboard(window.location.href)}>
-          <span className="material-icons-outlined">share</span>
+          <span className="material-icons-outlined">copy_all</span>
         </button>
         {copySuccess && (
-          <span>copied!</span>
+          <span>Link copiado!</span>
         )}
       </div>
 
