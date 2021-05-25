@@ -4,6 +4,7 @@ import { GetStaticPaths, GetStaticProps } from 'next'
 import { getPostData } from '../../lib/posts'
 import { convertDateToPtBR } from '../../utils/convertDateToPtBR'
 
+import Share from '../../components/Share'
 import Layout from '../../components/Layout'
 import Header from '../../components/Header'
 
@@ -33,7 +34,7 @@ export default function Post ({ post }: PostProps) {
         <h1>{post.title}</h1>
         <div className="info">
           <span>{post.date}</span>
-          <div className="share">compartilhar</div>
+          <Share title={post.title} description={post.description} url={window.location.href} />
         </div>
         <div dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
       </Container>
