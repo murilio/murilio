@@ -31,11 +31,11 @@ export default function Information () {
           </a>
         </div>
         <div className='technologies'>
-          <img src="/circles.svg" alt='círculos' />
+          <img src="/icons/circles.svg" alt='círculos' />
           <div className='cardsTechnologies'>
             <p>tecnologias do meu {'<'}3 </p>
             <div className='cardTechs'>
-              <img src="/heart.svg" alt='Coração pixelizado' className='heart' />
+              <img src="/icons/heart.svg" alt='Coração pixelizado' className='heart' />
               <IconNode />
               <IconReact />
               <IconJS />

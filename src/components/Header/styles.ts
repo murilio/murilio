@@ -67,10 +67,12 @@ export const Container = styled.header`
 
         img {
           height: 30px;
+          width: 30px;
           transition: all 0.2s;
 
           @media only screen and (min-width: 768px) {
             height: 39px;
+            width: 39px;
           }
         }
 
@@ -142,6 +144,7 @@ export const Container = styled.header`
 
       > .logo > img {
         height: 25px;
+        width: 25px;
       }
     }
 

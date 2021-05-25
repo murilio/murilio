@@ -60,7 +60,7 @@ export default function Footer () {
       </div>
       <div className='subFooter'>
         <h2>Layout desenhado com </h2>
-        <img src="/heart.svg" alt='coração pixelizado' />
+        <img src="/icons/heart.svg" alt='coração pixelizado' />
         <h2>por</h2>
         <a
           href='https://www.linkedin.com/in/edumauro/'

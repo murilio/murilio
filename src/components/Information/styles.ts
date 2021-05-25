@@ -101,6 +101,9 @@ export const Container = styled.section`
       margin: 0 0 30px 0;
       align-self: flex-start;
 
+      width: 267px;
+      height: 198px;
+
       @media only screen and (min-width: 1024px) {
         margin: -70px 0 100px -40px;
       }
