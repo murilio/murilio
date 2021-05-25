@@ -110,7 +110,7 @@ export const ViewAll = styled.div`
   > a {
     display: inline-block;
     margin: 50px 0 0 0;
-    background-color: var(--color-contraste);
+    background-color: var(--color-contraste-dark);
     border-radius: 20px;
     color: var(--color-branco);
     padding: 19px 65px;

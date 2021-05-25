@@ -30,7 +30,7 @@ export default function Home ({ posts }: Posts) {
         title="Olá, sou Murilio desenvolvedor fullstack"
         subtitle="Olá, bem-vindo"
         description="Sou apaixonado por desenvolvimento tanto frontend como backend. Estou bastante focado na stack de JavaScript, pois acredito em todo o seu potencial e claramente sou um entusiasta da tecnologia."
-        img="/murilio.png"
+        img="/murilio.webp"
         breadcrumbs={false}
       />
       <Information />

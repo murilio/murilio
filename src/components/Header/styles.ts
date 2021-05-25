@@ -243,7 +243,7 @@ export const Container = styled.header`
 `
 
 export const ArrowContent = styled.div`
-  background-color: var(--color-contraste);
+  background-color: var(--color-contraste-dark);
   color: var(--color-gray);
   border-radius: 30px;
   cursor: pointer;
