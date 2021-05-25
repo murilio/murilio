@@ -34,7 +34,7 @@ export default function Post ({ post }: PostProps) {
         <h1>{post.title}</h1>
         <div className="info">
           <span>{post.date}</span>
-          <Share title={post.title} description={post.description} url={window.location.href} />
+          <Share title={post.title} description={post.description} />
         </div>
         <div dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
       </Container>

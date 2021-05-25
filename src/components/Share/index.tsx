@@ -4,19 +4,14 @@ import { Container } from './styles'
 interface IShareProps {
   title: string
   description: string
-  url: string
 }
 
-export default function Share ({ title, description, url }: IShareProps) {
+export default function Share ({ title, description }: IShareProps) {
   const [copySuccess, setCopySuccess] = useState(false)
 
   const copyToClipboard = (e: string) => {
     navigator.clipboard.writeText(e)
     setCopySuccess(true)
-
-    setInterval(() => {
-      setCopySuccess(false)
-    }, 3000)
   }
 
   const sharePost = () => {
@@ -26,7 +21,7 @@ export default function Share ({ title, description, url }: IShareProps) {
         .share({
           title,
           text: description,
-          url
+          url: window.location.href
         })
         .then(() => console.log('Sharing successful'))
         .catch(() => console.log('Sharing failed'))
