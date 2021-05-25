@@ -22,7 +22,7 @@ export default function Footer () {
         </div>
         <div className='footerRight'>
           <div className='logo'>
-            <img src="/faviconWhite.png" alt='logo white' />
+            <img src="/favicon/faviconWhite.png" alt='logo white' />
             <h1>
               muri<span>dev</span>
             </h1>
