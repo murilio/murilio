@@ -56,7 +56,7 @@ export default function Header ({ subtitle, title, description, img, breadcrumbs
           <div className={bgMenu ? 'menu scrollMenu' : 'menu'}>
             <Link href='/'>
               <a className='logo'>
-                <img src="/favicon.ico" alt='Favicon' />
+                <img src="/favicon.png" alt='Favicon' />
                 <h1>muri<strong>dev</strong></h1>
               </a>
             </Link>
