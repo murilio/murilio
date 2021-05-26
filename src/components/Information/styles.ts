@@ -142,7 +142,12 @@ export const Container = styled.section`
         }
 
         .icon {
-          width: auto;
+          width: 90px;
+          height: 90px;
+        }
+
+        .icon-node {
+          width: 140px;
           height: 90px;
         }
       }

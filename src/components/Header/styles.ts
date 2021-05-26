@@ -63,22 +63,24 @@ export const Container = styled.header`
       .logo {
         display: flex;
         align-items: center;
+        gap: 15px;
+
         cursor: pointer;
 
         img {
           height: 28px;
-          width: auto;
+          width: 40px;
           transition: all 0.2s;
 
           @media only screen and (min-width: 768px) {
             height: 39px;
-            width: auto;
+            width: 100%;
           }
         }
 
         h1 {
           font-weight: 400;
-          margin: 0 0 0 18px;
+          margin: 0;
           font-size: 22px;
           color: var(--color-dark-gray);
           padding: 0;
@@ -144,7 +146,7 @@ export const Container = styled.header`
 
       > .logo > img {
         height: 25px;
-        width: auto;
+        width: 35px;
       }
     }
 

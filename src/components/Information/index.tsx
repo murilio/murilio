@@ -36,7 +36,7 @@ export default function Information () {
             <p>tecnologias do meu {'<'}3 </p>
             <div className='cardTechs'>
               <img className='heart' src="/icons/heart.svg" alt='Coração pixelizado' />
-              <img className='icon' src="/icons/nodejs.svg" alt="nodejs icon" />
+              <img className='icon-node' src="/icons/nodejs.svg" alt="nodejs icon" />
               <img className='icon' src="/icons/react.svg" alt="react icon" />
               <img className='icon' src="/icons/javascript.svg" alt="javascript" />
             </div>
