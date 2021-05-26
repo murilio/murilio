@@ -30,17 +30,19 @@ export default function Header ({ subtitle, title, description, img, breadcrumbs
     <>
       <Head>
         <title>{title} | Murilio</title>
+        <meta name="hostname" content="murilio.com.br" />
         <meta name="description" content={description} />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:url" content={`https://murilio.com.br${img}`} />
-        <meta property="og:title" content={title} />
-        <meta property="og:description" content={description} />
+
+        <meta property="og:locale" content="pt_BR" />
         <meta property="og:image" content={`https://murilio.com.br${img}`} />
-        <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:width" content="800" />
+        <meta property="og:image:alt" content={description} />
+        <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="600" />
-        <meta property="og:site_name" content="Murilio" />
-        <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="Murilio Dev" />
+        <meta property="og:type" content="object" />
+        <meta property="og:title" content={title} />
+        <meta property="og:url" content={window.location.href} />
+        <meta property="og:description" content={description} />
 
         <meta name="keywords" content="HTML, CSS, JavaScript, NextJS, Golang" />
         <meta name="author" content="Murilio" />
