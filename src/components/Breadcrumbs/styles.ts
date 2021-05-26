@@ -1,7 +1,5 @@
 import styled from 'styled-components'
 
-import { RiArrowRightSLine } from 'react-icons/ri'
-
 export const Container = styled.ul`
   list-style: none;
   padding: 5px 10px;
@@ -22,6 +20,10 @@ export const Container = styled.ul`
     display: flex;
     align-items: center;
 
+    > span {
+      font-size: 16px;
+    }
+
     > .active {
       color: var(--color-contraste);
     }
@@ -35,8 +37,4 @@ export const Container = styled.ul`
       overflow: hidden;
     }
   }
-`
-
-export const ArrowLeft = styled(RiArrowRightSLine)`
-  font-size: 13px;
 `

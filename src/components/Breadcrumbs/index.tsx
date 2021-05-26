@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 
 import { ActiveClassLink } from '../Link'
-import { Container, ArrowLeft } from './styles'
+import { Container } from './styles'
 import { convertSlugToString } from '../../utils/convertSlugToString'
 
 export default function Breadcrumbs () {
@@ -36,7 +36,7 @@ export default function Breadcrumbs () {
       </li>
       {breadcrumbs.map((breadcrumb, index: number) => (
         <li key={index}>
-          <ArrowLeft />
+          <span className="material-icons-outlined">chevron_right</span>
           <ActiveClassLink href={breadcrumb.href} linkName={convertSlugToString(breadcrumb.breadcrumb)} />
         </li>
       ))}

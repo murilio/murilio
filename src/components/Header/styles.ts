@@ -184,7 +184,7 @@ export const Container = styled.header`
           border: 0;
         }
 
-        span {
+        > span {
           font-style: normal;
           font-weight: normal;
           font-size: 14px;

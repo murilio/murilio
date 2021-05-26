@@ -1,9 +1,5 @@
 import styled from 'styled-components'
 
-// icons
-import { FaNode, FaReact } from 'react-icons/fa'
-import { SiJavascript } from 'react-icons/si'
-
 export const Container = styled.section`
   padding: 0 5%;
   margin: 50px 0 0 0;
@@ -144,6 +140,11 @@ export const Container = styled.section`
           width: 28px;
           height: 24.02px;
         }
+
+        .icon {
+          width: auto;
+          height: 90px;
+        }
       }
     }
 
@@ -151,19 +152,4 @@ export const Container = styled.section`
       width: 25%;
     }
   }
-`
-export const IconNode = styled(FaNode)`
-  color: var(--color-gray);
-  width: 127px;
-  height: 90px;
-`
-export const IconReact = styled(FaReact)`
-  color: var(--color-gray);
-  width: 90px;
-  height: 80.08px;
-`
-export const IconJS = styled(SiJavascript)`
-  color: var(--color-gray);
-  width: 69px;
-  height: 69px;
 `

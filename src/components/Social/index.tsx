@@ -1,4 +1,4 @@
-import { Container, IconLinkedin, IconGithub, IconInstagram } from './styles'
+import { Container } from './styles'
 
 export default function Social () {
   return (
@@ -8,21 +8,24 @@ export default function Social () {
         target='_blank'
         rel='noreferrer'
       >
-        <IconLinkedin />
+        <img src="/icons/linkedin.svg" alt="linkedin icon" />
+        <span>linkedin</span>
       </a>
       <a
         href='https://github.com/murilio'
         target='_blank'
         rel='noreferrer'
       >
-        <IconGithub />
+        <img src="/icons/github.svg" alt="github icon" />
+        <span>Github</span>
       </a>
       <a
         href='https://www.instagram.com/murilio.sw/'
         target='_blank'
         rel='noreferrer'
       >
-        <IconInstagram />
+        <img src="/icons/instagram.svg" alt="instagram icon" />
+        <span>Instagram</span>
       </a>
     </Container>
   )

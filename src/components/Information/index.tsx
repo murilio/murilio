@@ -1,5 +1,5 @@
 // styles
-import { Container, IconNode, IconReact, IconJS } from './styles'
+import { Container } from './styles'
 
 // components
 import CardUser from '../CardUser'
@@ -35,10 +35,10 @@ export default function Information () {
           <div className='cardsTechnologies'>
             <p>tecnologias do meu {'<'}3 </p>
             <div className='cardTechs'>
-              <img src="/icons/heart.svg" alt='Coração pixelizado' className='heart' />
-              <IconNode />
-              <IconReact />
-              <IconJS />
+              <img className='heart' src="/icons/heart.svg" alt='Coração pixelizado' />
+              <img className='icon' src="/icons/nodejs.svg" alt="nodejs icon" />
+              <img className='icon' src="/icons/react.svg" alt="react icon" />
+              <img className='icon' src="/icons/javascript.svg" alt="javascript" />
             </div>
           </div>
         </div>
