@@ -1,4 +1,4 @@
-<img align="right" width="350" src="https://github.com/murilio/murilio/blob/master/public/murilio.png">
+<img align="right" width="350" src="https://github.com/murilio/murilio/blob/master/public/murilio.webp">
 
 ## É **Murilio**, não Murilo
 
