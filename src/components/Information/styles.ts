@@ -138,7 +138,7 @@ export const Container = styled.section`
           top: -11px;
           right: 20px;
           width: 28px;
-          height: 24.02px;
+          height: 24px;
         }
 
         .icon {
