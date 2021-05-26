@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { useState, useEffect } from 'react'
 
 // style
@@ -21,12 +22,10 @@ type HeaderProps = {
 export default function Header ({ subtitle, title, description, img, breadcrumbs }: HeaderProps) {
   const [bgMenu, setBgMenu] = useState(false)
   const { ref, componentVisible, setComponentVisible } = useDetectClickOutside(false)
-
-  let URL = ''
+  const { asPath } = useRouter()
 
   useEffect(() => {
     window.onscroll = () => document.documentElement.scrollTop > 100 ? setBgMenu(true) : setBgMenu(false)
-    URL = window.location.href
   }, [])
 
   return (
@@ -44,7 +43,7 @@ export default function Header ({ subtitle, title, description, img, breadcrumbs
         <meta property="og:site_name" content="Murilio Dev" />
         <meta property="og:type" content="object" />
         <meta property="og:title" content={title} />
-        <meta property="og:url" content={URL} />
+        <meta property="og:url" content={`https://murilio.com.br${asPath}`} />
         <meta property="og:description" content={description} />
 
         <meta name="keywords" content="HTML, CSS, JavaScript, NextJS, Golang" />

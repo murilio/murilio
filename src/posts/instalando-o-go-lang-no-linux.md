@@ -11,25 +11,11 @@ thumbnail: '/golang/golang-1.webp'
 - abrir o terminal na pasta de onde foi baixado o arquivo e abrir o terminal.
 - descompactar o arquivo executando o seguinte commando.
 
-```
+```javascript
 # linux 64 bits
-$ tar -C -xzf <nome-do-arquivo>.linux-amd64.tar.gz
+$ sudo tar -C /usr/local -xzf <nome-do-arquivo>.linux-amd64.tar.gz
 ```
 
-## Movendo a pasta
-- em seguida mover a pasta descompactada para a pasta `/usr/local`
-
-```
-$ sudo mv go /usr/local
-```
-
-- agora para ficar mais organizado e separar seus projetos da pasta de instalação.
-- na pasta pessoal vamos criar uma pasta chamada `go`
-- para acessar usa pasta pessoal execute no terminal.
-
-```
-$ cd ~
-```
 ## Pastas dos projetos
 
 - crie uma pasta `go` no seu workspace ou no local de sua preferência.
