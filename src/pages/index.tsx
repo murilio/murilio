@@ -1,15 +1,15 @@
 import Link from 'next/link'
 import { GetStaticProps } from 'next'
 
-import { getSortedPostsData } from '../lib/posts'
-import { convertDateToPtBR } from '../utils/convertDateToPtBR'
-import { convertStringToSlug } from '../utils/convertStringToSlug'
+import { getSortedPostsData } from '@/src/lib/posts'
+import { convertDateToPtBR } from '@/src/utils/convertDateToPtBR'
+import { convertStringToSlug } from '@/src/utils/convertStringToSlug'
 
 // components
-import Layout from '../components/Layout'
-import Header from '../components/Header'
-import Articles from '../components/Articles'
-import Information from '../components/Information'
+import Layout from '@/src/components/Layout'
+import Header from '@/src/components/Header'
+import Articles from '@/src/components/Articles'
+import Information from '@/src/components/Information'
 
 type Post = {
   id: string

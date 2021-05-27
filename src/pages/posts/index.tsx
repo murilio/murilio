@@ -2,12 +2,12 @@ import styled from 'styled-components'
 import Link from 'next/link'
 
 import { GetStaticProps } from 'next'
-import { getSortedPostsData } from '../../lib/posts'
-import { convertDateToPtBR } from '../../utils/convertDateToPtBR'
-import { convertStringToSlug } from '../../utils/convertStringToSlug'
+import { getSortedPostsData } from '@/src/lib/posts'
+import { convertDateToPtBR } from '@/src/utils/convertDateToPtBR'
+import { convertStringToSlug } from '@/src/utils/convertStringToSlug'
 
-import Layout from '../../components/Layout'
-import Header from '../../components/Header'
+import Layout from '@/src/components/Layout'
+import Header from '@/src/components/Header'
 
 interface IPost {
   id: string
