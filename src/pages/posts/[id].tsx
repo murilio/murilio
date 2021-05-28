@@ -95,6 +95,7 @@ export const Container = styled.section`
 
   .views {
     display: flex;
+    align-items: center;
     gap: 10px;
 
     > span {

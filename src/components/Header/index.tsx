@@ -32,24 +32,36 @@ export default function Header ({ subtitle, title, description, img, breadcrumbs
     <>
       <Head>
         <title>{title} | Murilio</title>
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="hostname" content="murilio.com.br" />
+        <meta name="author" content="Murilio" />
         <meta name="description" content={description} />
+        <meta name="google" content="notranslate" />
+        <meta name="keywords" content="HTML, CSS, JavaScript, NextJS, Golang" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="image" content={`https://murilio.com.br${img}`} />
 
+        <meta property="og:url" content={`https://murilio.com.br${asPath}`} />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
         <meta property="og:locale" content="pt_BR" />
+        <meta property="og:site_name" content="Murilio Dev" />
         <meta property="og:image" content={`https://murilio.com.br${img}`} />
+        <meta property="og:image:secure_url" content={`https://murilio.com.br${img}`} />
         <meta property="og:image:alt" content={description} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="600" />
-        <meta property="og:site_name" content="Murilio Dev" />
-        <meta property="og:type" content="object" />
-        <meta property="og:title" content={title} />
-        <meta property="og:url" content={`https://murilio.com.br${asPath}`} />
-        <meta property="og:description" content={description} />
 
-        <meta name="keywords" content="HTML, CSS, JavaScript, NextJS, Golang" />
-        <meta name="author" content="Murilio" />
-        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:site" content="@Murilio20" />
+        <meta name="twitter:creator" content="@Murilio20" />
+        <meta name="twitter:image" content={`https://murilio.com.br${img}`} />
+        <meta name="twitter:image:src" content={`https://murilio.com.br${img}`} />
+        <meta name="twitter:image:alt" content={title} />
+        <meta name="twitter:image:width" content="1200" />
+        <meta name="twitter:description" content={description} />
       </Head>
       <Container>
         <div className='backgroundColor' id="inicio">
