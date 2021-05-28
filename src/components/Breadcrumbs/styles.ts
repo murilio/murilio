@@ -4,10 +4,9 @@ export const Container = styled.ul`
   list-style: none;
   padding: 5px 10px;
   margin: 0 0 20px 0;
-  width: max-content;
   background-color: var(--color-cinza-gelo);
   border-radius: 4px;
-  width: max-content;
+  width: 100%;
   display: flex;
   align-items: center;
 
