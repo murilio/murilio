@@ -7,7 +7,7 @@ export const Container = styled.ul`
   width: max-content;
   background-color: var(--color-cinza-gelo);
   border-radius: 4px;
-  width: 100%;
+  width: max-content;
   display: flex;
   align-items: center;
 

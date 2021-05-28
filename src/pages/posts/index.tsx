@@ -29,7 +29,7 @@ export default function Posts ({ posts }: PostsProps) {
         title="Todos os artigos"
         subtitle="Artigos"
         description="Aqui tento escrever sobre meus processos, tecnologias e o que der na telha."
-        img="/icons/default.webp"
+        img="/icons/default.jpg"
         breadcrumbs={true}
       />
       <Container>

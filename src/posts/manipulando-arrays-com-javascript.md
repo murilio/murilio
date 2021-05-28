@@ -3,7 +3,7 @@ title: 'Manipulando Arrays com JavaScript'
 description: 'Hoje vou desmistificar um pouco sobre arrays no JavaScript'
 category: 'JavaScript'
 date: '2021-05-28'
-thumbnail: '/javascript/javascript-2.webp'
+thumbnail: '/javascript/javascript-2.jpg'
 ---
 
 ## Início
