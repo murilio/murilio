@@ -60,7 +60,7 @@ export default function Header ({ subtitle, title, description, img, breadcrumbs
           <div className={bgMenu ? 'menu scrollMenu' : 'menu'}>
             <Link href='/'>
               <a className='logo'>
-                <img src="/favicon.svg" alt='Favicon' />
+                <img loading="lazy" src="/favicon.svg" alt='Favicon' />
                 <h1>muri<strong>dev</strong></h1>
               </a>
             </Link>
@@ -79,7 +79,7 @@ export default function Header ({ subtitle, title, description, img, breadcrumbs
               <span>{description}</span>
             </div>
             <div className='contentRight'>
-              <img src={img} alt={title} />
+              <img loading="lazy" src={img} alt={title} />
             </div>
           </div>
         </div>

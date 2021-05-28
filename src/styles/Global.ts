@@ -43,7 +43,6 @@ const GlobalStyle = createGlobalStyle`
   }
 
   html, body, #__next {
-    height: 100%;
     min-height: 100vh;
     scrollbar-width: thin;
     scroll-behavior: smooth;

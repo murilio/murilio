@@ -35,10 +35,10 @@ export default function Home ({ posts }: Posts) {
       />
       <Information />
       <Articles>
-        {posts.slice(0, 3).map(({ id, category, date, title, thumbnail }, index: number) => (
+        {posts.map(({ id, category, date, title, thumbnail }, index: number) => (
           <Link href={`/posts/${id}`} key={index}>
             <a className="articleCard">
-              <img src={thumbnail} alt={title} />
+              <img loading="lazy" src={thumbnail} alt={title} />
               <div className="content">
                 <div className="info">
                   <p>{date}</p>
@@ -56,7 +56,7 @@ export default function Home ({ posts }: Posts) {
 
 // gera o HTML estático da página
 export const getStaticProps: GetStaticProps = async () => {
-  const data = getSortedPostsData()
+  const data = getSortedPostsData(3)
 
   const posts = data.map((post: Post) => {
     return {

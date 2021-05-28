@@ -22,7 +22,7 @@ export default function Footer () {
         </div>
         <div className='footerRight'>
           <div className='logo'>
-            <img src="/faviconWhite.png" alt='logo white' />
+            <img loading="lazy" src="/faviconWhite.png" alt='logo white' />
             <h1>
               muri<span>dev</span>
             </h1>
@@ -60,7 +60,7 @@ export default function Footer () {
       </div>
       <div className='subFooter'>
         <h2>Layout desenhado com </h2>
-        <img src="/icons/heart.svg" alt='coração pixelizado' />
+        <img loading="lazy" src="/icons/heart.svg" alt='coração pixelizado' />
         <h2>por</h2>
         <a
           href='https://www.linkedin.com/in/edumauro/'

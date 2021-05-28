@@ -11,11 +11,12 @@ import { connectToDatabase } from '@/src/config/mongodb'
 const postsDirectory = path.join(process.cwd(), 'src/posts')
 
 // ordenando os posts pela data
-export function getSortedPostsData () {
+export function getSortedPostsData (id?: number) {
   // passando o caminho dos posts
   const fileNames = fs.readdirSync(postsDirectory)
 
-  const allPostsData = fileNames.map((fileName) => {
+  // fazendo um slice no array para pegar uma quantidade exata de posts
+  const allPostsData = fileNames.slice(0, id).map((fileName) => {
     const id = fileName.replace(/\.md$/, '')
     const fullPath = path.join(postsDirectory, fileName)
     const fileContents = fs.readFileSync(fullPath, 'utf8')

@@ -8,7 +8,7 @@ export default function Social () {
         target='_blank'
         rel='noreferrer'
       >
-        <img src="/icons/linkedin.svg" alt="linkedin icon" />
+        <img loading="lazy" src="/icons/linkedin.svg" alt="linkedin icon" />
         <span>linkedin</span>
       </a>
       <a
@@ -16,7 +16,7 @@ export default function Social () {
         target='_blank'
         rel='noreferrer'
       >
-        <img src="/icons/github.svg" alt="github icon" />
+        <img loading="lazy" src="/icons/github.svg" alt="github icon" />
         <span>Github</span>
       </a>
       <a
@@ -24,7 +24,7 @@ export default function Social () {
         target='_blank'
         rel='noreferrer'
       >
-        <img src="/icons/instagram.svg" alt="instagram icon" />
+        <img loading="lazy" src="/icons/instagram.svg" alt="instagram icon" />
         <span>Instagram</span>
       </a>
     </Container>

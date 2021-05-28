@@ -38,6 +38,7 @@ export const Container = styled.header`
       max-height: 70px;
       height: 100%;
       display: flex;
+      flex-direction: row-reverse;
       justify-content: space-between;
       align-items: center;
       position: fixed;
@@ -47,6 +48,10 @@ export const Container = styled.header`
       padding: 0 5%;
       transition: all 0.2s;
       z-index: 9;
+
+      @media only screen and (min-width: 768px) {
+        flex-direction: row;
+      }
 
       @media only screen and (min-width: 2440px) {
         padding: 0 15%;

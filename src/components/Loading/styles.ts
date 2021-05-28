@@ -1,14 +1,14 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 999;
 
   height: 100%;
   width: 100%;
-  background: radial-gradient(at center center, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.2) 100%);
+  background: radial-gradient(at center center,rgba(255,255,255,0.7) 0%,rgba(0,0,0,0.5) 100%);
 
   display: flex;
   justify-content: center;

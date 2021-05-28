@@ -31,14 +31,14 @@ export default function Information () {
           </a>
         </div>
         <div className='technologies'>
-          <img src="/icons/circles.svg" alt='círculos' />
+          <img loading="lazy" src="/icons/circles.svg" alt='círculos' />
           <div className='cardsTechnologies'>
             <p>tecnologias do meu {'<'}3 </p>
             <div className='cardTechs'>
-              <img className='heart' src="/icons/heart.svg" alt='Coração pixelizado' />
-              <img className='icon-node' src="/icons/nodejs.svg" alt="nodejs icon" />
-              <img className='icon' src="/icons/react.svg" alt="react icon" />
-              <img className='icon' src="/icons/javascript.svg" alt="javascript" />
+              <img loading="lazy" className='heart' src="/icons/heart.svg" alt='Coração pixelizado' />
+              <img loading="lazy" className='icon-node' src="/icons/nodejs.svg" alt="nodejs icon" />
+              <img loading="lazy" className='icon' src="/icons/react.svg" alt="react icon" />
+              <img loading="lazy" className='icon' src="/icons/javascript.svg" alt="javascript" />
             </div>
           </div>
         </div>

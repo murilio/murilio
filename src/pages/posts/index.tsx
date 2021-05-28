@@ -36,14 +36,16 @@ export default function Posts ({ posts }: PostsProps) {
         {posts.map(({ id, date, category, title, description, thumbnail }, index: number) => (
           <Link href={`/posts/${id}`} key={index}>
             <a className="articleCard">
-              <img src={thumbnail} alt={title} width="100" />
+              <img loading="lazy" src={thumbnail} alt={title} />
               <div className="content">
                 <div className="info">
                   <p>{date}</p>
                   <span className={convertStringToSlug(category)}>{category}</span>
                 </div>
-                <h2>{title}</h2>
-                <p>{description}</p>
+                <div className="text">
+                  <h2>{title}</h2>
+                  <p>{description}</p>
+                </div>
               </div>
             </a>
           </Link>
@@ -63,6 +65,7 @@ export const getStaticProps: GetStaticProps = async () => {
       date: convertDateToPtBR(post.date),
       category: post.category,
       title: post.title,
+      description: post.description,
       thumbnail: post.thumbnail
     }
   })
@@ -103,7 +106,7 @@ export const Container = styled.section`
     .content {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      gap: 35px;
 
       height: 100%;
 
@@ -120,26 +123,31 @@ export const Container = styled.section`
         }
       }
 
-      h2 {
-        font-style: normal;
-        font-weight: bold;
-        font-size: 24px;
-        line-height: 30px;
-        color: var(--color-dark-gray);
-        text-align: left;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        margin: 10px 0 20px;
-      }
+      .text {
+        display: flex;
+        flex-direction: column;
 
-      p {
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        font-size: 15px;
+        h2 {
+          font-style: normal;
+          font-weight: bold;
+          font-size: 24px;
+          line-height: 30px;
+          color: var(--color-dark-gray);
+          text-align: left;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          margin: 10px 0 20px;
+        }
+
+        p {
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          font-size: 15px;
+        }
       }
     }
   }
