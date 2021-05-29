@@ -62,6 +62,8 @@ export default function Header ({ subtitle, title, description, img, breadcrumbs
         <meta name="twitter:image:alt" content={title} />
         <meta name="twitter:image:width" content="1200" />
         <meta name="twitter:description" content={description} />
+
+        <meta name="google-site-verification" content="YAhG_xrpoAMTkeB0RrLYUr85OVC6zvTQB6RFkgqbaSc" />
       </Head>
       <Container>
         <div className='backgroundColor' id="inicio">
