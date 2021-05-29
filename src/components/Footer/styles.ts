@@ -159,7 +159,9 @@ export const Container = styled.footer`
     > img {
       margin: 0 5px;
       right: 20px;
+
       width: 28px;
+      height: 28px;
     }
 
     a {

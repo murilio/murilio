@@ -5,6 +5,11 @@ import { ActiveClassLink } from '../Link'
 import { Container } from './styles'
 import { convertSlugToString } from '../../utils/convertSlugToString'
 
+type breadcrumbs = {
+  breadcrumb: string
+  href: string
+}
+
 export default function Breadcrumbs () {
   const router = useRouter()
   const [breadcrumbs, setBreadcrumbs] = useState(null)
@@ -19,7 +24,7 @@ export default function Breadcrumbs () {
         .map((path, i) => {
           return {
             breadcrumb: path,
-            href: `/${linkPath.slice(0, i + 1).join('/')}`
+            href: `/ ${linkPath.slice(0, i + 1).join('/')} `
           }
         })
 
@@ -34,7 +39,7 @@ export default function Breadcrumbs () {
       <li>
         <ActiveClassLink href="/#inicio" linkName="Início" />
       </li>
-      {breadcrumbs.map((breadcrumb, index: number) => (
+      {breadcrumbs.map((breadcrumb: breadcrumbs, index: number) => (
         <li key={index}>
           <span className="material-icons-outlined">chevron_right</span>
           <ActiveClassLink href={breadcrumb.href} linkName={convertSlugToString(breadcrumb.breadcrumb)} />
