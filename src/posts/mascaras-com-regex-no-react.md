@@ -7,7 +7,8 @@ thumbnail: '/reactjs/reactjs-01.jpg'
 ---
 
 ## Máscaras
-- eu crio um arquivo em `/lib/mask.js` e escrevo as funções de máscaras
+eu crio um arquivo em `/lib/mask.js` e escrevo as funções de máscaras
+
 
 ```
 export function cep(e) {
@@ -42,16 +43,24 @@ export function telefone(e) {
 }
 ```
 
-- Eu crio funções que recebem como parâmetro o valor do input que o usuário está digitando.
-- Em específico irei falar do campo de CEP.
-- Na primeira linha eu defino o valor máximo que o usuário irá poder inserir no campo.
-- Na segunda eu crio uma variável value onde recebe o valor digitado pelo usuário.
-- Na terceira linha eu uso um método replace que retorna uma string com algumas correspondências de um padrão, substituídos por um determinado caractere. esse método recebe dois parâmetros, o primeiro é a o valor a ser encontrado e o segundo parâmetro é o valor a substituir, no nosso caso eu quero valores apenas numéricos, caso o usuário digite alguma letra, ele remove automaticamente.
-- Na quarta linha eu uso o método replace novamente, onde no primeiro parâmetro, passo uma regex, que eu quero encontrar duas ocorrências a primeira com 5 dígitos e a outra com a quantidade de dígitos que sobrarem, que no caso é 3 dígitos, e no segundo parâmetro informo que entra a primeira e a segunda ocorrência, inserir um — (hífen), que é a formatação padrão do CEP.
-- No fim de tudo na ultima linha, eu apenas atribuo o valor formatado ao value do input, e pronto, temos uma máscara e uma validação para o input.
+Eu crio funções que recebem como parâmetro o valor do input que o usuário está digitando.
+
+Em específico irei falar do campo de CEP.
+
+Na primeira linha eu defino o valor máximo que o usuário irá poder inserir no campo.
+
+Na segunda eu crio uma variável value onde recebe o valor digitado pelo usuário.
+
+Na terceira linha eu uso um método replace que retorna uma string com algumas correspondências de um padrão, substituídos por um determinado caractere. esse método recebe dois parâmetros, o primeiro é a o valor a ser encontrado e o segundo parâmetro é o valor a substituir, no nosso caso eu quero valores apenas numéricos, caso o usuário digite alguma letra, ele remove automaticamente.
+
+Na quarta linha eu uso o método replace novamente, onde no primeiro parâmetro, passo uma regex, que eu quero encontrar duas ocorrências a primeira com 5 dígitos e a outra com a quantidade de dígitos que sobrarem, que no caso é 3 dígitos, e no segundo parâmetro informo que entra a primeira e a segunda ocorrência, inserir um — (hífen), que é a formatação padrão do CEP.
+
+No fim de tudo na ultima linha, eu apenas atribuo o valor formatado ao value do input, e pronto, temos uma máscara e uma validação para o input.
+
 
 ## Input
-- dentro da pasta de componentes eu crio `/componentes/Input.js`
+dentro da pasta de componentes eu crio `/componentes/Input.js`
+
 
 ```
 import React, { useCallback } from 'react'
@@ -82,8 +91,10 @@ const Input = ({mask, ...props}) => {
 export default Input
 ```
 
-- Esse aqui ficou a estrutura do meu Input, e eu crio meus componentes em formato de constante, pois acredito que facilita a minha leitura, seguindo isso, meu componente recebe duas propriedades, a primeira é a máscara que o input irá utilizar e a segunda passo todas as propriedades com o operador spread que permite passar vários argumentos, que no nosso caso seria as propriedades do input como value, style, type, tudo o que for necessário para o seu input.
-- A partir disso crio uma função que fica ouvindo todo o que é digitado pelo usuário, como o input recebe o tipo de máscara, utilizei o useCallback do react para criar a função que recebe como parâmetro os dados do input e dentro é verificado qual a máscara informada e é retornado a máscara todas as propriedades do input.
+Esse aqui ficou a estrutura do meu Input, e eu crio meus componentes em formato de constante, pois acredito que facilita a minha leitura, seguindo isso, meu componente recebe duas propriedades, a primeira é a máscara que o input irá utilizar e a segunda passo todas as propriedades com o operador spread que permite passar vários argumentos, que no nosso caso seria as propriedades do input como value, style, type, tudo o que for necessário para o seu input.
+
+A partir disso crio uma função que fica ouvindo todo o que é digitado pelo usuário, como o input recebe o tipo de máscara, utilizei o useCallback do react para criar a função que recebe como parâmetro os dados do input e dentro é verificado qual a máscara informada e é retornado a máscara todas as propriedades do input.
+
 
 ## Usando o componente de input
 
@@ -147,8 +158,6 @@ function App() {
 export default App;
 ```
 
-- Aqui tem um exemplo de como fica o uso do input, é um componente de input normal, o que muda é apenas uma propriedade mask, que é informado o tipo de máscara que o input irá utilizar, e apenas com isso o input já irá entender automaticamente o tamanho máximo, formatação, e assim temos o nosso regex e validação finalizadas.
+Aqui tem um exemplo de como fica o uso do input, é um componente de input normal, o que muda é apenas uma propriedade mask, que é informado o tipo de máscara que o input irá utilizar, e apenas com isso o input já irá entender automaticamente o tamanho máximo, formatação, e assim temos o nosso regex e validação finalizadas.
 
 repositório: [github](https://github.com/murilio/Input-Mask-Regex)
-
-meu linkedin: https://www.linkedin.com/in/murilio/

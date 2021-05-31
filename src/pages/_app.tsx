@@ -30,6 +30,7 @@ export default function Application ({ Component, pageProps }: AppProps) {
         <title>Murilio | Dev</title>
       </Head>
       <StyleGlobal />
+
       {loading && <Loading />}
       <Component {...pageProps} />
     </>

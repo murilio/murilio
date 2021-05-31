@@ -41,7 +41,7 @@ export default function Share ({ title, description }: IShareProps) {
           <span className="material-icons-outlined">copy_all</span>
         </button>
         {copySuccess && (
-          <span>Link copiado!</span>
+          <span>URL do post copiada!</span>
         )}
       </div>
 

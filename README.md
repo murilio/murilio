@@ -1,15 +1,19 @@
-<img align="right" width="350" src="https://github.com/murilio/murilio/blob/master/public/murilio.webp">
+<!-- <img align="right" width="350" src="https://github.com/murilio/murilio/blob/master/public/murilio.webp"> -->
 
 ## É **Murilio**, não Murilo
 
-[![Linkedin Badge](https://img.shields.io/badge/-Murilio-0a66c2?style=flat-square&logo=Linkedin&logoColor=white&link=https://linkedin.com/in/murilio)](https://linkedin.com/in/murilio/)
-[![Instagram Badge](https://img.shields.io/badge/-Murilio-833AB4?style=flat-square&logo=Instagram&logoColor=white&link=https://instagram.com/murilio.sw/)](https://instagram.com/murilio.sw/)
+<p align="left">
+<a href="https://murilio.com.br"><img src="https://img.shields.io/badge/-murilio.com.br-%2312100E?style=flat&logo=sitepoint&logoColor=white"/></a>
+<a href="https://linkedin.com/in/murilio"><img src="https://img.shields.io/badge/-Murilio-0077B5?style=flat&logo=Linkedin&logoColor=white"/></a>
+<a href="https://twitter.com/Murilio20"><img src="https://img.shields.io/badge/-@murilio20-%231DA1F2?style=flat&logo=twitter&logoColor=white"/></a>
+<a href="mailto:murilio.nssw@gmail.com"><img src="https://img.shields.io/badge/-murilio.nssw@gmail.com-D14836?style=flat&logo=Gmail&logoColor=white"/></a>
+</p>
 
 <br />
 
 Full-Stack Developer :man_technologist:
 
-```javascript
+```js
 console.log('Hello World');
 ```
 
@@ -35,12 +39,11 @@ console.log('Hello World');
 <code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/ubuntu/ubuntu.png"></code>
 <code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/terminal/terminal.png"></code>
 
-
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=murilio&layout=compact&theme=dracula)](https://murilio.com.br/)
 
 [![Murilio wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=murilio&theme=dracula)](https://murilio.com.br/)
 
 ### Projects
 
-- Projeto em React consumindo api sobre o covid-19:[Acesse aqui](https://covid-19-m.herokuapp.com/)
+- Projeto em React consumindo api sobre o covid-19: [Acesse aqui](https://covid.murilio.com.br/)
 - Clone do **Pipefy** usando React e drag e drop: [Acesse aqui](https://muriliopipefy.netlify.app/)

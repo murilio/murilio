@@ -112,7 +112,7 @@ export const Container = styled.header`
         @media screen and (min-width: 768px) {
           position: initial;
           display: flex;
-          height: auto;
+          height: 100%;
           width: auto;
           background: transparent;
         }

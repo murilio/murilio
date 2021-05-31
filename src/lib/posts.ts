@@ -15,8 +15,7 @@ export function getSortedPostsData (id?: number) {
   // passando o caminho dos posts
   const fileNames = fs.readdirSync(postsDirectory)
 
-  // fazendo um slice no array para pegar uma quantidade exata de posts
-  const allPostsData = fileNames.slice(0, id).map((fileName) => {
+  const allPostsData = fileNames.map((fileName) => {
     const id = fileName.replace(/\.md$/, '')
     const fullPath = path.join(postsDirectory, fileName)
     const fileContents = fs.readFileSync(fullPath, 'utf8')
@@ -29,8 +28,10 @@ export function getSortedPostsData (id?: number) {
     }
   })
 
-  // ordenando os posts pela data
-  return allPostsData.sort((a, b) => a.date < b.date ? 1 : -1)
+  // ordenando os posts pela data e fazendo um slice para pegar uma quantidade determinada de posts
+  return allPostsData
+    .sort((a, b) => a.date < b.date ? 1 : -1)
+    .slice(0, id)
 }
 
 export function getLastPostData () {}

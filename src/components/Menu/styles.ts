@@ -8,14 +8,14 @@ export const Container = styled.div`
 
   height: 100%;
   width: 240px;
-  background-color: rgb(244, 244, 247);
+  background-color: #f9f9f9;
   box-shadow: rgb(0 0 0 / 10%) 3px 5px 11px 2px;
   position: relative;
 
   ul {
-    position: relative;
     display: flex;
     flex-direction: column;
+    position: relative;
     gap: 20px;
 
     list-style: none;
@@ -43,7 +43,7 @@ export const Container = styled.div`
   }
 
   @media only screen and (min-width: 768px) {
-    height: auto;
+    height: 100%;
     width: auto;
     background: transparent;
     box-shadow: none;
@@ -51,11 +51,18 @@ export const Container = styled.div`
     flex-direction: row;
 
     ul {
+      align-items: center;
       flex-direction: row;
       margin: 0 100px 0 0;
+      height: 100%;
 
-      li > a {
-        font-size: 14px;
+      li {
+        display: flex;
+        height: 100%;
+
+        > a {
+          font-size: 14px;
+        }
       }
     }
   }

@@ -89,6 +89,10 @@ export const Container = styled.section`
     justify-content: flex-start;
   }
 
+  @media only screen and (min-width: 2440px) {
+    padding: 2% 15%;
+  }
+
   .articleCard {
     display: flex;
     flex-direction: column;
