@@ -1,26 +1,36 @@
 import type { AppProps } from 'next/app'
-import Router from 'next/router'
 import Head from 'next/head'
+
+import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
+
+import * as gtag from '../lib/gtag'
 
 // style global
 import StyleGlobal from '@/src/styles/Global'
 import Loading from '@/src/components/Loading'
 
 export default function Application ({ Component, pageProps }: AppProps) {
+  const router = useRouter()
   const [loading, setLoading] = useState(false)
 
   useEffect(() => {
     const start = () => setLoading(true)
     const end = () => setLoading(false)
 
-    Router.events.on('routeChangeStart', start)
-    Router.events.on('routeChangeComplete', end)
-    Router.events.on('routeChangeError', end)
+    const handleRouteChange = (url: string) => {
+      gtag.pageView(url)
+    }
+
+    router.events.on('routeChangeComplete', handleRouteChange)
+    router.events.on('routeChangeStart', start)
+    router.events.on('routeChangeComplete', end)
+    router.events.on('routeChangeError', end)
     return () => {
-      Router.events.off('routeChangeStart', start)
-      Router.events.off('routeChangeComplete', end)
-      Router.events.off('routeChangeError', end)
+      router.events.off('routeChangeComplete', handleRouteChange)
+      router.events.off('routeChangeStart', start)
+      router.events.off('routeChangeComplete', end)
+      router.events.off('routeChangeError', end)
     }
   }, [])
 
