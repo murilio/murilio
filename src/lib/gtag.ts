@@ -1,5 +1,12 @@
 export const GA_TRACKING_ID = process.env.GA_TRACKING_ID
 
+declare global {
+  // eslint-disable-next-line no-unused-vars
+  interface Window {
+    gtag: any;
+  }
+}
+
 // https://developers.google.com/analytics/devguides/collection/gtagjs/pages
 export const pageView = (url: string) => {
   window.gtag('config', GA_TRACKING_ID, {
