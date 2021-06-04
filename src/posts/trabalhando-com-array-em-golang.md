@@ -115,6 +115,3 @@ e aqui eu imprimo apenas o valor contido no array e ignoro o contador.
 4
 5
 ```
-
-### Conhecendo o slice
-
