@@ -49,6 +49,7 @@ export default function Header ({ subtitle, title, description, img, breadcrumbs
         <meta property="og:locale" content="pt_BR" />
         <meta property="og:site_name" content="Murilio Dev" />
         <meta property="og:image" content={`https://murilio.com.br${img}`} />
+        <meta property="og:image:type" content="image/jpg"></meta>
         <meta property="og:image:secure_url" content={`https://murilio.com.br${img}`} />
         <meta property="og:image:alt" content={description} />
         <meta property="og:image:width" content="1200" />
