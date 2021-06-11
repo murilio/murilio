@@ -8,6 +8,7 @@ interface IShareProps {
 
 export default function Share ({ title, description }: IShareProps) {
   const [copySuccess, setCopySuccess] = useState(false)
+  const [messageShare, setMessageShare] = useState('')
 
   const copyToClipboard = (e: string) => {
     navigator.clipboard.writeText(e)
@@ -20,17 +21,14 @@ export default function Share ({ title, description }: IShareProps) {
 
   const sharePost = () => {
     if (navigator.share) {
-      console.log('Congrats! Your browser supports Web Share API')
       navigator
         .share({
           title,
           text: description,
           url: window.location.href
         })
-        .then(() => console.log('Sharing successful'))
-        .catch(() => console.log('Sharing failed'))
-    } else {
-      console.log('Sorry! Your browser does not support Web Share API')
+        .then(() => setMessageShare('Compartilhado com sucesso!'))
+        .catch(() => setMessageShare('Falhou!'))
     }
   }
 
@@ -49,6 +47,9 @@ export default function Share ({ title, description }: IShareProps) {
         <button onClick={() => sharePost()}>
           <span className="material-icons-outlined">share</span>
         </button>
+        {messageShare && (
+          <span>{messageShare}</span>
+        )}
       </div>
     </Container>
   )
