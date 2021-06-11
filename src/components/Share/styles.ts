@@ -4,6 +4,12 @@ export const Container = styled.div`
   .web {
     display: none;
     position: relative;
+  }
+
+  .web button, .mobile button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 
     > span {
       position: absolute;
@@ -16,12 +22,6 @@ export const Container = styled.div`
       width: max-content;
       border-radius: 3px;
     }
-  }
-
-  .web button, .mobile button {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
   }
 
   @media screen and (min-width: 768px) {
