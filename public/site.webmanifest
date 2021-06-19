@@ -1,15 +1,14 @@
 {
   "name": "Murilio Dev",
   "short_name": "murilio",
+  "theme_color": "#F14D9C",
+  "background_color": "#534cce",
+  "display": "standalone",
   "icons": [
     {
       "src": "/android-chrome-72x72.png",
       "sizes": "72x72",
       "type": "image/png"
     }
-  ],
-  "theme_color": "#F14D9C",
-  "background_color": "#534cce",
-  "display": "standalone",
-  "start_url": "."
+  ]
 }
