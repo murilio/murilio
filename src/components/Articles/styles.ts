@@ -34,18 +34,13 @@ export const Container = styled.section`
       flex-direction: column;
       justify-content: space-between;
 
-      .imageContent {
-        position: relative;
+      img {
+        max-height: 254px;
         min-height: 254px;
-
-        img {
-          max-height: 254px;
-          min-height: 254px;
-          width: 100%;
-          height: 100%;
-          border-radius: 20px;
-          object-fit: cover;
-        }
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        object-fit: cover;
       }
 
       .content {

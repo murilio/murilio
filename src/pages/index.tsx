@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import { GetStaticProps } from 'next'
 
 import { getSortedPostsData } from '@/src/lib/posts'
@@ -39,15 +38,7 @@ export default function Home ({ posts }: Posts) {
         {posts.map(({ id, category, date, title, thumbnail }, index: number) => (
           <Link href={`/posts/${id}`} key={index}>
             <a className="articleCard">
-              <div className="imageContent">
-                <Image
-                  alt={title}
-                  src={thumbnail}
-                  blurDataURL="data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWEREiMxUf/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
-                  placeholder="blur"
-                  layout="fill"
-                />
-              </div>
+              <img loading="lazy" src={thumbnail} alt={title} />
               <div className="content">
                 <div className="info">
                   <p>{date}</p>
