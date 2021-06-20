@@ -159,6 +159,8 @@ export const Container = styled.header`
       display: flex;
       justify-content: space-between;
       align-items: center;
+      gap: 20px;
+
       padding: 0 5%;
       min-height: 100vh;
 

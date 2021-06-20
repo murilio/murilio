@@ -83,10 +83,11 @@ export const Container = styled.section`
   display: grid;
   grid-gap: 20px;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, 250px);
+  grid-template-columns: 1fr;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 585px) {
     justify-content: flex-start;
+    grid-template-columns: repeat(auto-fit, 250px);
   }
 
   @media only screen and (min-width: 2440px) {
