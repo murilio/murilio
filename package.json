@@ -7,6 +7,12 @@
   "license": "MIT",
   "private": true,
   "workspaces": {
-    "packages": ["packages/*"]
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "devDependencies": {
+    "typescript": "^4.3.4",
+    "@murilio/eslint": "*"
   }
 }
