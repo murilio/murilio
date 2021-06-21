@@ -57,8 +57,8 @@ export default function Header ({ subtitle, title, description, img, breadcrumbs
 
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content={title} />
-        <meta name="twitter:site" content="@Murilio20" />
-        <meta name="twitter:creator" content="@Murilio20" />
+        <meta name="twitter:site" content="@muriliodev" />
+        <meta name="twitter:creator" content="@muriliodev" />
         <meta name="twitter:image" content={`https://murilio.com.br${img}`} />
         <meta name="twitter:image:src" content={`https://murilio.com.br${img}`} />
         <meta name="twitter:image:alt" content={title} />
