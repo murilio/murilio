@@ -140,6 +140,16 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
+  blockquote {
+    background-color: var(--color-cinza-gelo);
+    padding: 20px;
+    border-left: solid 5px var(--color-contraste);
+
+    p {
+      margin: 0;
+    }
+  }
+
   ul {
     padding-left: 20px;
   }
@@ -148,7 +158,7 @@ const GlobalStyle = createGlobalStyle`
   /* styles categories */
   .golang, .go,
   .react-js, .react,
-  .javascript, .js {
+  .javascript, .js, .html {
     padding: 2px 8px;
     border-radius: 4px;
     font-size: 13px;
@@ -167,6 +177,11 @@ const GlobalStyle = createGlobalStyle`
 
   .javascript, .js {
     background-color: #fbbb19;
+    color: var(--color-preto);
+  }
+
+  .html {
+    background-color: #fc7700;
     color: var(--color-preto);
   }
   /* end styles categories */

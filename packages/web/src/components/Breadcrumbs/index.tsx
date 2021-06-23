@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, memo } from 'react'
 import { useRouter } from 'next/router'
 
 import { ActiveClassLink } from '../Link'
@@ -10,7 +10,7 @@ type breadcrumbs = {
   href: string
 }
 
-export default function Breadcrumbs () {
+const Breadcrumbs = () => {
   const router = useRouter()
   const [breadcrumbs, setBreadcrumbs] = useState(null)
 
@@ -48,3 +48,5 @@ export default function Breadcrumbs () {
     </Container>
   )
 }
+
+export default memo(Breadcrumbs)

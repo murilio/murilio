@@ -1,9 +1,10 @@
+import { memo } from 'react'
 import Social from '../Social'
 import { ActiveClassLink } from '../Link'
 
 import { Container } from './styles'
 
-export default function Menu () {
+const Menu = () => {
   return (
     <Container>
       <ul>
@@ -16,3 +17,5 @@ export default function Menu () {
     </Container>
   )
 }
+
+export default memo(Menu)

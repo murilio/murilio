@@ -34,7 +34,12 @@ export const Container = styled.section`
       flex-direction: column;
       justify-content: space-between;
 
+      &:hover img {
+        box-shadow: 2px 3px 10px var(--color-gray);
+      }
+
       img {
+        transition: all .4s;
         max-height: 254px;
         min-height: 254px;
         width: 100%;
