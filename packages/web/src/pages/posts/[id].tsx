@@ -6,7 +6,7 @@ import { convertDateToPtBR } from '@/src/utils/convertDateToPtBR'
 
 import Share from '@/src/components/Share'
 import Layout from '@/src/components/Layout'
-import Header from '@/src/components/Header'
+import { Header } from '@/src/components/Header'
 
 interface IPostProps {
   date: string

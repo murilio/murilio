@@ -7,7 +7,7 @@ import { convertDateToPtBR } from '@/src/utils/convertDateToPtBR'
 import { convertStringToSlug } from '@/src/utils/convertStringToSlug'
 
 import Layout from '@/src/components/Layout'
-import Header from '@/src/components/Header'
+import { Header } from '@/src/components/Header'
 
 interface IPost {
   id: string

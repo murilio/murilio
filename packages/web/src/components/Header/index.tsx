@@ -1,32 +1,30 @@
-import { useState, useEffect, memo } from 'react'
+import { memo, useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 
 import Head from 'next/head'
-import Link from 'next/link'
 
 // style
-import { Container, ArrowContent } from './styles'
+import { Container, ArrowContent, ScrollButton } from './styles'
 
 // components
-import Breadcrumbs from '../Breadcrumbs'
 import Menu from '../Menu'
-import useDetectClickOutside from '@/src/hooks/useDetectClickOutside'
 
 type HeaderProps = {
+  img: string
   title: string
   subtitle: string
   description: string
-  img: string
   breadcrumbs: boolean
 }
 
 function HeaderComponent ({ subtitle, title, description, img, breadcrumbs }: HeaderProps) {
-  const [bgMenu, setBgMenu] = useState(false)
-  const { ref, componentVisible, setComponentVisible } = useDetectClickOutside(false)
+  const [scrollHeight, setScrollHeight] = useState(0)
   const { asPath } = useRouter()
 
+  const scrollToTop = () => window.scrollTo({ top: 0 })
+
   useEffect(() => {
-    window.onscroll = () => document.documentElement.scrollTop > 100 ? setBgMenu(true) : setBgMenu(false)
+    window.onscroll = () => document.documentElement.scrollTop > 0 ? setScrollHeight(document.documentElement.scrollTop) : setScrollHeight(0)
   }, [])
 
   return (
@@ -72,33 +70,16 @@ function HeaderComponent ({ subtitle, title, description, img, breadcrumbs }: He
           <div className='colorWhite'></div>
           <div className='colorGelo'></div>
         </div>
-        <div className='container'>
-          <div className={bgMenu ? 'menu scrollMenu' : 'menu'}>
-            <Link href='/'>
-              <a className='logo'>
-                <img loading="lazy" src="/favicon.svg" alt='Favicon' />
-                <h1>muri<strong>dev</strong></h1>
-              </a>
-            </Link>
 
-            <div ref={ref} className={componentVisible ? 'navigation navigationOpen' : 'navigation'}>
-              <Menu />
-            </div>
-            <span className="material-icons-outlined btn-menu" onClick={() => setComponentVisible(true)}>menu</span>
-          </div>
+        <Menu
+          img={img}
+          title={title}
+          scrollHeight={scrollHeight}
+          subtitle={subtitle}
+          breadcrumbs={breadcrumbs}
+          description={description}
+        />
 
-          <div className='content'>
-            <div className='contentLeft'>
-              {breadcrumbs && (<Breadcrumbs />)}
-              <h2>{subtitle}</h2>
-              <h1>{title}</h1>
-              <span>{description}</span>
-            </div>
-            <div className='contentRight'>
-              <img loading="lazy" src={img} alt={title} />
-            </div>
-          </div>
-        </div>
         <a className='arrow' href='#content'>
           <ArrowContent>
             <span className="material-icons-outlined">south</span>
@@ -106,6 +87,11 @@ function HeaderComponent ({ subtitle, title, description, img, breadcrumbs }: He
         </a>
       </Container>
       <div id="content" />
+      <ScrollButton show={scrollHeight > 500} onClick={scrollToTop} >
+        <span className="material-icons-outlined">
+          expand_less
+        </span>
+      </ScrollButton >
     </>
   )
 }
