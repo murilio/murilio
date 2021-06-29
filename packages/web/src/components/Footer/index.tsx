@@ -12,12 +12,12 @@ export default function Footer () {
             Vamos conversar<span>.</span>
           </h1>
           <span className='linha'></span>
-          <p>contato@murilio.com.br</p>
+          <p>murilio.nssw@gmail.com</p>
           <p>(83) 9 9665-9384</p>
 
           <div className='location'>
             <p>João Pessoa - Paraíba </p>
-            <p>Fullstack Developer at Sogo Tecnologia</p>
+            <p>Software Engineer at SOGO Tecnologia</p>
           </div>
         </div>
         <div className='footerRight'>
@@ -31,7 +31,6 @@ export default function Footer () {
             <ul>
               <li><ActiveClassLink href='/#inicio' linkName="Início" /></li>
               <li><ActiveClassLink href='/#about' linkName="Sobre" /></li>
-              {/* <li><ActiveClassLink href='/#cases' linkName="Cases" /></li> */}
               <li><ActiveClassLink href='/#blog' linkName="Blog" /></li>
               <li><ActiveClassLink href='/#contact' linkName="Contato" /></li>
             </ul>

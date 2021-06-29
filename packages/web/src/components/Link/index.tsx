@@ -1,3 +1,4 @@
+import { memo } from 'react'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 
@@ -7,7 +8,7 @@ type Props = {
   iconName?: string
 }
 
-export const ActiveClassLink = ({ href, linkName, iconName }: Props) => {
+function ActiveClassLinkComponent ({ href, linkName, iconName }: Props) {
   const router = useRouter()
 
   const className = router.pathname === href || router.asPath === href ? 'active' : null
@@ -22,4 +23,4 @@ export const ActiveClassLink = ({ href, linkName, iconName }: Props) => {
   )
 }
 
-export default { ActiveClassLink }
+export const ActiveClassLink = memo(ActiveClassLinkComponent)

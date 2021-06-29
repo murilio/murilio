@@ -1,4 +1,4 @@
-import { useEffect, useState, memo } from 'react'
+import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 
 import { ActiveClassLink } from '../Link'
@@ -49,4 +49,4 @@ const Breadcrumbs = () => {
   )
 }
 
-export default memo(Breadcrumbs)
+export default Breadcrumbs

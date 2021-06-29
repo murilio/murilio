@@ -1,4 +1,3 @@
-import { memo } from 'react'
 import Social from '../Social'
 import { ActiveClassLink } from '../Link'
 
@@ -18,4 +17,4 @@ const Menu = () => {
   )
 }
 
-export default memo(Menu)
+export default Menu

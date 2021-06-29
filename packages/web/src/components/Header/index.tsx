@@ -1,8 +1,8 @@
+import { useState, useEffect, memo } from 'react'
+import { useRouter } from 'next/router'
+
 import Head from 'next/head'
 import Link from 'next/link'
-
-import { useRouter } from 'next/router'
-import { useState, useEffect } from 'react'
 
 // style
 import { Container, ArrowContent } from './styles'
@@ -20,7 +20,7 @@ type HeaderProps = {
   breadcrumbs: boolean
 }
 
-export default function Header ({ subtitle, title, description, img, breadcrumbs }: HeaderProps) {
+function HeaderComponent ({ subtitle, title, description, img, breadcrumbs }: HeaderProps) {
   const [bgMenu, setBgMenu] = useState(false)
   const { ref, componentVisible, setComponentVisible } = useDetectClickOutside(false)
   const { asPath } = useRouter()
@@ -109,3 +109,5 @@ export default function Header ({ subtitle, title, description, img, breadcrumbs
     </>
   )
 }
+
+export const Header = memo(HeaderComponent)

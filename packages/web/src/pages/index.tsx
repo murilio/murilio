@@ -7,7 +7,7 @@ import { convertStringToSlug } from '@/src/utils/convertStringToSlug'
 
 // components
 import Layout from '@/src/components/Layout'
-import Header from '@/src/components/Header'
+import { Header } from '@/src/components/Header'
 import Articles from '@/src/components/Articles'
 import Information from '@/src/components/Information'
 
