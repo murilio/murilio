@@ -43,6 +43,8 @@ console.log('Hello World');
 
 [![Murilio wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=murilio&theme=dracula)](https://murilio.com.br/)
 
+[![Murilio GitHub stats](https://github-readme-stats.vercel.app/api?username=murilio&count_private=true&theme=dracula)](https://murilio.com.br/)
+
 ### Projects
 
 - Projeto em React consumindo api sobre o covid-19: [Acesse aqui](https://covid.murilio.com.br/)
