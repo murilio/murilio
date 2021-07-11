@@ -92,8 +92,8 @@ export const ScrollButton = styled.button<ButtonProps>`
   background-color: var(--color-contraste);
   color: var(--color-cinza-gelo);
   border: 0;
-  height: 35px;
-  width: 35px;
+  height: 0;
+  width: 0;
   z-index: 9;
   border-radius: 8px;
   box-shadow: 1px 1px 5px var(--color-gray);
@@ -103,5 +103,7 @@ export const ScrollButton = styled.button<ButtonProps>`
 
   ${props => props.show && css`
     opacity: 1;
+    height: 35px;
+    width: 35px;
   `}
 `

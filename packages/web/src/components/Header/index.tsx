@@ -88,9 +88,7 @@ function HeaderComponent ({ subtitle, title, description, img, breadcrumbs }: He
       </Container>
       <div id="content" />
       <ScrollButton show={scrollHeight > 500} onClick={scrollToTop} >
-        <span className="material-icons-outlined">
-          expand_less
-        </span>
+        <span className="material-icons-outlined">expand_less</span>
       </ScrollButton >
     </>
   )
