@@ -46,8 +46,6 @@ salve e feche o arquivo.
 ```
 
 export PATH=$PATH:/usr/local/go/bin
-export GOPATH="$HOME/go"
-export GOBIN="$GOPATH/bin"
 ```
 
 para concluir a instalação é necessário atualiza o arquivo `~/.profile`.
