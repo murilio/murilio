@@ -32,6 +32,7 @@ export default function Posts ({ posts }: PostsProps) {
         img="/icons/default.jpg"
         breadcrumbs={true}
       />
+      <h1>search aqui</h1>
       <Container>
         {posts.map(({ id, date, category, title, description, thumbnail }, index: number) => (
           <Link href={`/posts/${id}`} key={index}>

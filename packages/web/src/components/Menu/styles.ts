@@ -260,7 +260,10 @@ export const ContainerGeneral = styled.div`
 
       img {
         width: 100%;
+        height: 500px;
+
         border-radius: 20px;
+        object-fit: cover;
       }
 
       @media only screen and (min-width: 768px) {
