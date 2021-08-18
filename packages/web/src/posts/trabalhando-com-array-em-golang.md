@@ -3,7 +3,7 @@ title: 'Trabalhando com array em Golang'
 description: 'Aqui está um pequeno artigo de como trabalhar com array em Go'
 category: 'Golang'
 date: '2021-06-01'
-thumbnail: '/golang/golang-2.jpg'
+thumbnail: '/images/golang/golang-2.jpg'
 ---
 
 ## Início

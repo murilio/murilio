@@ -3,7 +3,7 @@ title: 'Atributos HTML que você precisa conhecer'
 description: 'Nesse post vou apresentar alguns atributos HTML desconhecidos pela maioria dos devs front-end'
 category: 'HTML'
 date: '2021-06-22'
-thumbnail: '/html/html-1.jpg'
+thumbnail: '/images/html/html-1.jpg'
 ---
 
 ## Motivação

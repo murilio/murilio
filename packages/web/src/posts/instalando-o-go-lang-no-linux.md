@@ -3,7 +3,7 @@ title: 'Instalando o Go lang no linux'
 description: 'Pequeno passo a passo de como instalar o Go lang em máquinas linux'
 category: 'Golang'
 date: '2021-05-10'
-thumbnail: '/golang/golang-1.jpg'
+thumbnail: '/images/golang/golang-1.jpg'
 ---
 
 ## Download

@@ -118,7 +118,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   pre {
-    background: rgb(29, 31, 33);
+    background: #2d333b;
     color: rgb(248, 248, 242);
     white-space: pre;
     overflow: auto;
@@ -156,12 +156,18 @@ const GlobalStyle = createGlobalStyle`
   /* end style markdown */
 
   /* styles categories */
+  .git,
   .golang, .go,
   .react-js, .react,
   .javascript, .js, .html {
     padding: 2px 8px;
     border-radius: 4px;
     font-size: 13px;
+  }
+
+  .git {
+    background-color: #e65328;
+    color: var(--color-branco);
   }
 
   .golang, .go {
