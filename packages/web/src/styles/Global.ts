@@ -167,7 +167,7 @@ const GlobalStyle = createGlobalStyle`
 
   .git {
     background-color: #e65328;
-    color: var(--color-branco);
+    color: var(--color-preto);
   }
 
   .golang, .go {

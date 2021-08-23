@@ -18,7 +18,7 @@ export default function Application ({ Component, pageProps }: AppProps) {
     const start = () => setLoading(true)
     const end = () => setLoading(false)
 
-    const handleRouteChange = (url: string) => {
+    const handleRouteChange = (url: string = 'www.murilio.com.br') => {
       gtag.pageView(url)
     }
 
