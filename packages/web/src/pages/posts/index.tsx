@@ -64,6 +64,16 @@ export default function Posts ({ posts }: PostsProps) {
             </Link>
           ))}
       </Container>
+
+      <amp-ad width="100vw" height="320"
+        type="adsense"
+        data-ad-client="ca-pub-7360952889289960"
+        data-ad-slot="6669841821"
+        data-auto-format="rspv"
+        data-full-width="">
+        <div overflow=""></div>
+      </amp-ad>
+
     </Layout>
   )
 }
