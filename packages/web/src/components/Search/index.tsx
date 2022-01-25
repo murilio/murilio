@@ -12,6 +12,7 @@ const Search = ({ handleSearch }: SearchProps) => {
         <Input
           id="search"
           autoComplete="off"
+          placeholder="Busque por título ou palavras chaves, ex: JavaScript"
           onChange={(e) => handleSearch(e.target.value)}
         />
       </Label>
