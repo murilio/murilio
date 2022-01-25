@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import styled from 'styled-components'
 import Link from 'next/link'
 
@@ -8,6 +9,7 @@ import { convertStringToSlug } from '@/src/utils/convertStringToSlug'
 
 import Layout from '@/src/components/Layout'
 import { Header } from '@/src/components/Header'
+import { Search } from '@/src/components/Search'
 
 interface IPost {
   id: string
@@ -23,6 +25,12 @@ type PostsProps = {
 }
 
 export default function Posts ({ posts }: PostsProps) {
+  const [search, setSearch] = useState<string>('')
+
+  const handleSetSearch = (text: string) => {
+    setSearch(text)
+  }
+
   return (
     <Layout>
       <Header
@@ -32,25 +40,29 @@ export default function Posts ({ posts }: PostsProps) {
         img="/icons/default.jpg"
         breadcrumbs={true}
       />
-      <h1>search aqui</h1>
+      <Search handleSearch={handleSetSearch} />
       <Container>
-        {posts.map(({ id, date, category, title, description, thumbnail }, index: number) => (
-          <Link href={`/posts/${id}`} key={index}>
-            <a className="articleCard">
-              <img loading="lazy" src={thumbnail} alt={title} />
-              <div className="content">
-                <div className="info">
-                  <p>{date}</p>
-                  <span className={convertStringToSlug(category)}>{category}</span>
+        {posts
+          .filter((item) => search === ''
+            ? item
+            : (item.category.toLowerCase().includes(search.toLowerCase()) || item.title.toLowerCase().includes(search.toLowerCase())))
+          .map(({ id, date, category, title, description, thumbnail }, index: number) => (
+            <Link href={`/posts/${id}`} key={index}>
+              <a className="articleCard">
+                <img loading="lazy" src={thumbnail} alt={title} />
+                <div className="content">
+                  <div className="info">
+                    <p>{date}</p>
+                    <span className={convertStringToSlug(category)}>{category}</span>
+                  </div>
+                  <div className="text">
+                    <h2>{title}</h2>
+                    <p>{description}</p>
+                  </div>
                 </div>
-                <div className="text">
-                  <h2>{title}</h2>
-                  <p>{description}</p>
-                </div>
-              </div>
-            </a>
-          </Link>
-        ))}
+              </a>
+            </Link>
+          ))}
       </Container>
     </Layout>
   )
@@ -89,6 +101,7 @@ export const Container = styled.section`
   @media screen and (min-width: 585px) {
     justify-content: flex-start;
     grid-template-columns: repeat(auto-fit, 250px);
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
   }
 
   @media only screen and (min-width: 2440px) {
@@ -112,7 +125,7 @@ export const Container = styled.section`
     .content {
       display: flex;
       flex-direction: column;
-      gap: 35px;
+      gap: 20px;
 
       height: 100%;
 
@@ -138,6 +151,7 @@ export const Container = styled.section`
           font-weight: bold;
           font-size: 24px;
           line-height: 30px;
+          height: 97px;
           color: var(--color-dark-gray);
           text-align: left;
           display: -webkit-box;
