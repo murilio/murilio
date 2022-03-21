@@ -52,6 +52,8 @@ export default class MyDocument extends Document {
           />
           <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp&display=swap" /></noscript>
 
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7360952889289960" crossOrigin="anonymous"></script>
+
           <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
           <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png" />
           <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -75,19 +77,6 @@ export default class MyDocument extends Document {
           `
             }}
           />
-
-          {/* <script dangerouslySetInnerHTML={{
-            __html: `
-                (function(h,o,t,j,a,r){
-                    h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-                    h._hjSettings={hjid:2437609,hjsv:6};
-                    a=o.getElementsByTagName('head')[0];
-                    r=o.createElement('script');r.async=1;
-                    r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-                    a.appendChild(r);
-                })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-          `
-          }} /> */}
         </Head>
         <body>
           <Main />
