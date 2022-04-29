@@ -1,4 +1,4 @@
 This is a Brave Rewards publisher verification file.
 
 Domain: murilio.com.br
-Token: 4e2dcd572567ae29da816535f1636d2e47115588db86521fcb6ed088bca18b8a
+Token: 804d30a680780243749e80e7e8cd3842b24a5aa2caaa669a6ab93de9f25e491a
