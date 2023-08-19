@@ -8,7 +8,7 @@ declare global {
 }
 
 // https://developers.google.com/analytics/devguides/collection/gtagjs/pages
-export const pageView = (url: string = 'www.murilio.com.br') => {
+export const pageView = (url: string = 'www.murilio.dev') => {
   window.gtag('config', GA_TRACKING_ID, {
     page_path: url
   })
