@@ -1,11 +1,8 @@
 import fs from 'fs'
-import path from 'path'
 import matter from 'gray-matter'
+import path from 'path'
 import remark from 'remark'
 import html from 'remark-html'
-
-// import getIP from '@/src/utils/getIP'
-import { connectToDatabase } from '@/src/config/mongodb'
 
 // procurando o caminho do arquivo dos posts
 const postsDirectory = path.join(process.cwd(), 'src/posts')
@@ -51,7 +48,6 @@ export function getLastPostData () {}
 
 // pegando um post pelo ID
 export async function getPostData (id: string) {
-  const { db, client } = await connectToDatabase()
 
   const fullPath = path.join(postsDirectory, `${id}.md`)
   const fileContents = fs.readFileSync(fullPath, 'utf8')
@@ -61,52 +57,6 @@ export async function getPostData (id: string) {
 
   const contentHtml = processedContent.toString()
 
-  // possível melhoria abstrair essa lógica em um arquivo separado
-  // const ip = await getIP()
-
-  // let views = 0
-  // if (client.isConnected()) {
-  //   const pageAccessIp = await db
-  //     .collection('access')
-  //     .findOne({ ip })
-
-  //   const pageViewById = await db
-  //     .collection('views')
-  //     .findOne({ slug: id })
-
-  //   if (!pageAccessIp) {
-  //     await db.collection('access').insertOne({ ip })
-
-  //     if (pageViewById) {
-  //       views = pageViewById.views + 1
-  //       await db.collection('views').updateOne({ slug: id }, { $set: { views } })
-  //     } else {
-  //       views = 1
-  //       await db.collection('views').insertOne({ slug: id, views })
-  //     }
-  //   } else {
-  //     if (pageViewById) {
-  //       views = pageViewById.views
-  //     } else {
-  //       views = 1
-  //       await db.collection('views').insertOne({ slug: id, views })
-  //     }
-  //   }
-  // }
-
-  let views = 0
-  if (client.isConnected()) {
-    const pageViewBySlug = await db.collection('views').findOne({ slug: id })
-
-    if (pageViewBySlug) {
-      views = pageViewBySlug.views + 1
-      await db.collection('views').updateOne({ slug: id }, { $set: { views } })
-    } else {
-      views = 1
-      await db.collection('views').insertOne({ slug: id, views })
-    }
-  }
-
   return {
     id,
     contentHtml,
@@ -115,6 +65,5 @@ export async function getPostData (id: string) {
     category: matterResult.data.category,
     date: matterResult.data.date,
     thumbnail: matterResult.data.thumbnail,
-    views
   }
 }

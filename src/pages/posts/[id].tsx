@@ -1,12 +1,12 @@
-import styled from 'styled-components'
 import { GetStaticPaths, GetStaticProps } from 'next'
+import styled from 'styled-components'
 
 import { getPostData } from '@/src/lib/posts'
 import { convertDateToPtBR } from '@/src/utils/convertDateToPtBR'
 
-import Share from '@/src/components/Share'
-import Layout from '@/src/components/Layout'
 import { Header } from '@/src/components/Header'
+import Layout from '@/src/components/Layout'
+import Share from '@/src/components/Share'
 
 interface IPostProps {
   date: string
@@ -32,10 +32,6 @@ export default function Post ({ post }: PostProps) {
         breadcrumbs={true}
       />
       <Container>
-        <div className="views">
-          <span className="material-icons-outlined">visibility</span>
-          <p>{post.views}</p>
-        </div>
         <h1>{post.title}</h1>
         <div className="info">
           <span>{post.date}</span>
@@ -67,7 +63,6 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
     description: data.description,
     thumbnail: data.thumbnail,
     contentHtml: data.contentHtml,
-    views: data.views
   }
 
   return {
@@ -91,21 +86,5 @@ export const Container = styled.section`
 
     width: 100%;
     padding: 10px 0 20px;
-  }
-
-  .views {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
-    > span {
-      font-size: 22px;
-      color: var(--color-dark-gray);
-    }
-
-    > p {
-      margin: 0;
-      color: var(--color-gray);
-    }
   }
 `

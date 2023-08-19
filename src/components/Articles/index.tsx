@@ -1,7 +1,11 @@
 // styles
 import Link from 'next/link'
 import { ReactNode } from 'react'
+
 import { Container, Title, ViewAll } from './styles'
+
+
+
 
 interface ArticlesProps {
   children?: ReactNode
