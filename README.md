@@ -4,9 +4,8 @@
 
 <p align="left">
 <a href="https://murilio.dev"><img src="https://img.shields.io/badge/-murilio.dev-%2312100E?style=flat&logo=sitepoint&logoColor=white"/></a>
-<a href="https://linkedin.com/in/murilio"><img src="https://img.shields.io/badge/-Murilio-0077B5?style=flat&logo=Linkedin&logoColor=white"/></a>
+<a href="https://linkedin.com/in/murilio"><img src="https://img.shields.io/badge/-murilio-0077B5?style=flat&logo=Linkedin&logoColor=white"/></a>
 <a href="https://twitter.com/muriliodev"><img src="https://img.shields.io/badge/-@muriliodev-%231DA1F2?style=flat&logo=twitter&logoColor=white"/></a>
-<a href="mailto:murilio.nssw@gmail.com"><img src="https://img.shields.io/badge/-murilio.nssw@gmail.com-D14836?style=flat&logo=Gmail&logoColor=white"/></a>
 <a href="#"><img src="https://komarev.com/ghpvc/?username=murilio&label=Profile%20views&color=877657&style=flat" alt="murilio" /></a>
 </p>
 
@@ -31,6 +30,10 @@
 <code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/ubuntu/ubuntu.png"></code>
 <code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/terminal/terminal.png"></code>
 
+### 💻 Projetos
+
+- atualizando...
+
 ### 📈 Estatísticas
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=murilio&layout=donut-vertical&theme=dracula)](https://murilio.dev)
@@ -39,6 +42,3 @@
 
 [![Murilio GitHub stats](https://github-readme-stats.vercel.app/api?username=murilio&count_private=true&theme=dracula)](https://murilio.dev)
 
-### 💻 Projetos
-
-- atualizando...
