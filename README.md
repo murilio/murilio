@@ -1,44 +1,34 @@
-<!-- <img align="right" width="350" src="https://github.com/murilio/murilio/blob/master/public/murilio.webp"> -->
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## É _Murilio_, não Murilo
+## Getting Started
 
-<p align="left">
-<a href="https://murilio.dev"><img src="https://img.shields.io/badge/-murilio.dev-%2312100E?style=flat&logo=sitepoint&logoColor=white"/></a>
-<a href="https://linkedin.com/in/murilio"><img src="https://img.shields.io/badge/-murilio-0077B5?style=flat&logo=Linkedin&logoColor=white"/></a>
-<a href="https://twitter.com/muriliodev"><img src="https://img.shields.io/badge/-@muriliodev-%231DA1F2?style=flat&logo=twitter&logoColor=white"/></a>
-<a href="#"><img src="https://komarev.com/ghpvc/?username=murilio&label=Profile%20views&color=877657&style=flat" alt="murilio" /></a>
-</p>
+First, run the development server:
 
-### 👨🏻‍💻 Sobre mim
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+```
 
-- ⚡️ Full-Stack Developer
-- 🇧🇷 João Pessoa - Paraíba
-- 🔭 Entusiasta no mundo front-end com Angular e React
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### 🛠️ Linguagens e ferramentas:
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-<code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"></code>
-<code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png"></code>
-<code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/angular/angular.png"></code>
-<code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"></code>
-<code><img height="30" src="https://user-images.githubusercontent.com/1680157/87443758-4a5f9600-c5cc-11ea-8f63-92e126a1145b.png"></code>
-<code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/postgresql/postgresql.png"></code>
-<code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/docker/docker.png"></code>
-<code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/go/go.png"></code>
-<code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png"></code>
-<code><img height="30" src="https://user-images.githubusercontent.com/1680157/87443755-49c6ff80-c5cc-11ea-954a-579f7c72873a.png"></code>
-<code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/ubuntu/ubuntu.png"></code>
-<code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/terminal/terminal.png"></code>
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-### 💻 Projetos
+## Learn More
 
-- atualizando...
+To learn more about Next.js, take a look at the following resources:
 
-### 📈 Estatísticas
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=murilio&layout=donut-vertical&theme=dracula)](https://murilio.dev)
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-<!-- [![Murilio wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=murilio&theme=dracula&layout=compact-layout)](https://murilio.dev) -->
+## Deploy on Vercel
 
-[![Murilio GitHub stats](https://github-readme-stats.vercel.app/api?username=murilio&count_private=true&theme=dracula)](https://murilio.dev)
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
