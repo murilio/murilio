@@ -1,4 +1,4 @@
-import Document, { Html, Head, Main, NextScript, DocumentContext } from 'next/document'
+import Document, { DocumentContext, Head, Html, Main, NextScript } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
 
 import { GA_TRACKING_ID } from '../lib/gtag'
@@ -68,14 +68,13 @@ export default class MyDocument extends Document {
           <script
             dangerouslySetInnerHTML={{
               __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA_TRACKING_ID}', {
-              page_path: window.location.pathname,
-            });
-          `
-            }}
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${GA_TRACKING_ID}', {
+                  page_path: window.location.pathname,
+                });
+              `}}
           />
         </Head>
         <body>

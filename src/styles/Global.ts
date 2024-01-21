@@ -159,7 +159,7 @@ const GlobalStyle = createGlobalStyle`
   .git,
   .golang, .go,
   .react-js, .react,
-  .javascript, .js, .html {
+  .javascript, .js, .html, .angular {
     padding: 2px 8px;
     border-radius: 4px;
     font-size: 13px;
@@ -189,6 +189,11 @@ const GlobalStyle = createGlobalStyle`
   .html {
     background-color: #fc7700;
     color: var(--color-preto);
+  }
+
+  .angular {
+    background-color: #f11653;
+    color: var(--color-branco);
   }
   /* end styles categories */
 `

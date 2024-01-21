@@ -9,6 +9,7 @@ import Layout from '@/src/components/Layout'
 import Share from '@/src/components/Share'
 
 interface IPostProps {
+  path: string,
   date: string
   title: string,
   description: string,
@@ -58,6 +59,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
   const data = await getPostData(String(id))
 
   const post = {
+    path: id,
     date: convertDateToPtBR(data.date),
     title: data.title,
     description: data.description,

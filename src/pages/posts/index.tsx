@@ -1,14 +1,14 @@
+import Link from 'next/link'
 import { useState } from 'react'
 import styled from 'styled-components'
-import Link from 'next/link'
 
-import { GetStaticProps } from 'next'
 import { getSortedPostsData } from '@/src/lib/posts'
 import { convertDateToPtBR } from '@/src/utils/convertDateToPtBR'
 import { convertStringToSlug } from '@/src/utils/convertStringToSlug'
+import { GetStaticProps } from 'next'
 
-import Layout from '@/src/components/Layout'
 import { Header } from '@/src/components/Header'
+import Layout from '@/src/components/Layout'
 import { Search } from '@/src/components/Search'
 
 interface IPost {
@@ -151,7 +151,7 @@ export const Container = styled.section`
           font-weight: bold;
           font-size: 24px;
           line-height: 30px;
-          height: 97px;
+          height: 90px;
           color: var(--color-dark-gray);
           text-align: left;
           display: -webkit-box;

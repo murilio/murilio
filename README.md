@@ -1,6 +1,6 @@
 <!-- <img align="right" width="350" src="https://github.com/murilio/murilio/blob/master/public/murilio.webp"> -->
 
-## É _Murilio_, não Murilo
+## _Murilio_
 
 <p align="left">
 <a href="https://murilio.dev"><img src="https://img.shields.io/badge/-murilio.dev-%2312100E?style=flat&logo=sitepoint&logoColor=white"/></a>
