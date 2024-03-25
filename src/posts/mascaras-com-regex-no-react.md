@@ -1,16 +1,16 @@
 ---
-title: 'Máscaras com regex no React JS'
-description: 'Bom, esses dias eu precisei fazer uma máscara para um campo de input, encontrei algumas libs que conseguiram auxiliar na hora de criar a mascara, mas, elas não retornavam o valor ou estavam muito desatualizadas, portanto decidi criar tanto minhas máscara, sem usar nenhuma lib, apenas javascript e regex, vamos lá.'
-category: 'React JS'
-date: '2020-12-13'
-thumbnail: '/images/reactjs/reactjs-01.jpg'
+title: "Máscaras com regex no React JS"
+description: "Bom, esses dias eu precisei fazer uma máscara para um campo de input, encontrei algumas libs que conseguiram auxiliar na hora de criar a mascara, mas, elas não retornavam o valor ou estavam muito desatualizadas, portanto decidi criar tanto minhas máscara, sem usar nenhuma lib, apenas javascript e regex, vamos lá."
+category: "React JS"
+date: "2020-12-13"
+thumbnail: "/images/reactjs/reactjs-01.jpg"
 ---
 
 ## Máscaras
+
 eu crio um arquivo em `/lib/mask.js` e escrevo as funções de máscaras
 
-
-```
+```JS
 export function cep(e) {
   e.currentTarget.maxLength = 9
   let value = e.currentTarget.value
@@ -57,12 +57,11 @@ Na quarta linha eu uso o método replace novamente, onde no primeiro parâmetro,
 
 No fim de tudo na ultima linha, eu apenas atribuo o valor formatado ao value do input, e pronto, temos uma máscara e uma validação para o input.
 
-
 ## Input
+
 dentro da pasta de componentes eu crio `/componentes/Input.js`
 
-
-```
+```JS
 import React, { useCallback } from 'react'
 
 // mascaras
@@ -95,10 +94,9 @@ Esse aqui ficou a estrutura do meu Input, e eu crio meus componentes em formato 
 
 A partir disso crio uma função que fica ouvindo todo o que é digitado pelo usuário, como o input recebe o tipo de máscara, utilizei o useCallback do react para criar a função que recebe como parâmetro os dados do input e dentro é verificado qual a máscara informada e é retornado a máscara todas as propriedades do input.
 
-
 ## Usando o componente de input
 
-```
+```JS
 import { useState } from 'react';
 
 import Input from './components/Input'

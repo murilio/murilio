@@ -1,12 +1,13 @@
 ---
-title: 'Trabalhando com array em Golang'
-description: 'Aqui está um pequeno artigo de como trabalhar com array em Go'
-category: 'Golang'
-date: '2021-06-01'
-thumbnail: '/images/golang/golang-2.jpg'
+title: "Trabalhando com array em Golang"
+description: "Aqui está um pequeno artigo de como trabalhar com array em Go"
+category: "Golang"
+date: "2021-06-01"
+thumbnail: "/images/golang/golang-2.jpg"
 ---
 
 ## Início
+
 array sao estruturas de dados
 
 os arrays são estruturas homogêneas e estáticas (no caso, elas sempre vão ter o mesmo tipo e mesmo tamanho quando for definido)
@@ -15,7 +16,7 @@ vale lembrar também que o array é uma estrutura indexada e que cada elemento t
 
 ### Declarando o primeiro array
 
-```
+```go
 var notas [3]float64
 fmt.Println(notas) // [0 0 0]
 ```
@@ -24,7 +25,7 @@ no exemplo acima a variável notas recebe um array e dentro do colchetes pode se
 
 como não foi passado nenhum valor para o array, ele imprime tudo 0, que é o valor default do float64
 
-```
+```go
 numeros := [...]int{1, 2, 3, 4, 5}
 ```
 
@@ -34,7 +35,7 @@ portando criei o array do tipo `int` e dentro as chaves passei o seu conteúdo, 
 
 ### Passando valores para o array
 
-```
+```go
 var notas [3]float64
 notas[0], notas[1], notas[2] = 7.9, 5.3, 7.8
 fmt.Println(notas) // [7.9 5.3 7.8]
@@ -44,10 +45,9 @@ como o meu array tem um tamanho fixo de 3 posições, logo eu só posso 3 valore
 
 aqui como passei um valor para índice, quando imprimo o array ele me retorna os valores passados para cada índice
 
-
 ### Percorrendo o array usando For
 
-```
+```go
 var notas [3]float64
 notas[0], notas[1], notas[2] = 7.9, 5.3, 7.8
 
@@ -59,6 +59,7 @@ for i := 0; i < len(notas); i++ {
 media := total / float64(len(notas))
 fmt.Printf("Média %.2f", media) // 7
 ```
+
 aqui faço um for, logo em seguida inicializo o contador `i` = 0, e uso uma função chamada `len` para poder calcular o tamanho do array e depois vou incrementando o contador que é a variável `i`.
 
 e dentro da função vou pegar cada uma das notas e ir somando e atribuindo a variável `total`.
@@ -73,7 +74,7 @@ depois imprimo no console o resultado da média usando a função `printf` passa
 
 ### Percorrendo array usando Range
 
-```
+```go
 numeros := [...]int{1, 2, 3, 4, 5}
 
 for i, num := range numeros {
@@ -85,8 +86,7 @@ o exemplo de código a cima é pra usar o `range` para percorrer um array.
 
 este formato de `array` é explicado na sessão de como declarar o primeiro array, dando continuidade ao for inicializo um contador e uma variável num que irá receber o valor de cada item do array, dentro do array vou imprimir os valores, usei a função `Println` e passei como parâmetro %d pois quero imprimir um inteiro e os valores a serem impressos e logo abaixo tem o resultado.
 
-
-```
+```go
 // output
 0: 1
 1: 2
@@ -97,7 +97,7 @@ este formato de `array` é explicado na sessão de como declarar o primeiro arra
 
 no go existe uma forma de ignorar valores, no caso se o valor do contador não fosse necessário, poderia ser ignorado como no exemplo:
 
-```
+```go
 numeros := [...]int{1, 2, 3, 4, 5}
 
 for _, num := range numeros {
@@ -107,7 +107,7 @@ for _, num := range numeros {
 
 e aqui eu imprimo apenas o valor contido no array e ignoro o contador.
 
-```
+```go
 // output
 1
 2
