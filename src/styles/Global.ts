@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   :root {
@@ -64,6 +64,10 @@ const GlobalStyle = createGlobalStyle`
   a {
     text-decoration: none;
     color: var(--color-roxo);
+  }
+
+  a:hover {
+    text-decoration: underline;
   }
 
   /* styles markdown */
@@ -157,9 +161,15 @@ const GlobalStyle = createGlobalStyle`
 
   /* styles categories */
   .git,
-  .golang, .go,
-  .react-js, .react,
-  .javascript, .js, .html, .angular {
+  .golang,
+  .go,
+  .react-js,
+  .react,
+  .javascript,
+  .js,
+  .html,
+  .angular,
+  .css {
     padding: 2px 8px;
     border-radius: 4px;
     font-size: 13px;
@@ -195,7 +205,12 @@ const GlobalStyle = createGlobalStyle`
     background-color: #f11653;
     color: var(--color-branco);
   }
-  /* end styles categories */
-`
 
-export default GlobalStyle
+  .css {
+    background-color: #2491C8;
+    color: var(--color-branco);
+  }
+  /* end styles categories */
+`;
+
+export default GlobalStyle;
